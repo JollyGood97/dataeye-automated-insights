@@ -1,0 +1,102 @@
+Based on the data analysis, here are the insights:
+
+1. **Insight 1: Average Marks for Each Subject**
+   - **Question:** What is the average marks for each subject across all terms?
+   - **Answer:** 
+     - Math: 67.5
+     - English: 64.4
+     - Science: 63.1
+   - **Summary:** The average marks for Math are the highest among all subjects, followed by English and then Science.
+   - **Visualization Chart:**
+     - **Chart Type:** Bar Chart
+     - **Reasoning:** A bar chart will effectively compare the average marks for each subject.
+     - **Parameters:**
+       - x_axis: Subjects (Math, English, Science)
+       - y_axis: Average Marks
+       - title: Average Marks for Each Subject
+
+2. **Insight 2: Highest Marks Scored in Each Subject**
+   - **Question:** What is the highest marks scored in each subject?
+   - **Answer:** 
+     - Math: 93
+     - English: 86
+     - Science: 85
+   - **Summary:** The highest marks were scored in Math, followed by English and then Science.
+   - **Visualization Chart:**
+     - **Chart Type:** Pie Chart
+     - **Reasoning:** A pie chart will show the distribution of the highest marks across subjects.
+     - **Parameters:**
+       - labels: Subjects (Math, English, Science)
+       - values: Highest Marks
+
+3. **Insight 3: Average Marks for Each Student**
+   - **Question:** What is the average marks for each student across all subjects and terms?
+   - **Answer:** 
+     - Jack: 84.83
+     - Peter: 79.67
+     - Mary: 72.67
+     - John: 56.83
+     - Bob: 31.0
+   - **Summary:** Jack has the highest average marks among all students, while Bob has the lowest.
+   - **Visualization Chart:**
+     - **Chart Type:** Line Chart
+     - **Reasoning:** A line chart will show the trend of average marks for each student.
+     - **Parameters:**
+       - x_axis: Students (Jack, Peter, Mary, John, Bob)
+       - y_axis: Average Marks
+       - title: Average Marks for Each Student
+
+```json
+[
+    {
+        "insight_question": "Average Marks for Each Subject",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each subject across all terms?", "answer": "Math: 67.5, English: 64.4, Science: 63.1"}
+        ],
+        "summary": "Math has the highest average marks, followed by English and then Science.",
+        "assumption": "Assuming the data is accurate and complete.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "To compare the average marks for each subject effectively.",
+            "parameters": {
+                "x_axis": "Subjects (Math, English, Science)",
+                "y_axis": "Average Marks",
+                "title": "Average Marks for Each Subject"
+            }
+        }
+    },
+    {
+        "insight_question": "Highest Marks Scored in Each Subject",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the highest marks scored in each subject?", "answer": "Math: 93, English: 86, Science: 85"}
+        ],
+        "summary": "Math has the highest marks scored, followed by English and then Science.",
+        "assumption": "Assuming the highest marks are accurate and not outliers.",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "To show the distribution of highest marks across subjects.",
+            "parameters": {
+                "labels": "Subjects (Math, English, Science)",
+                "values": "Highest Marks"
+            }
+        }
+    },
+    {
+        "insight_question": "Average Marks for Each Student",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each student across all subjects and terms?", "answer": "Jack: 84.83, Peter: 79.67, Mary: 72.67, John: 56.83, Bob: 31.0"}
+        ],
+        "summary": "Jack has the highest average marks among all students, while Bob has the lowest.",
+        "assumption": "Assuming the average marks calculation is correct.",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "To show the trend of average marks for each student.",
+            "parameters": {
+                "x_axis": "Students (Jack, Peter, Mary, John, Bob)",
+                "y_axis": "Average Marks",
+                "title": "Average Marks for Each Student"
+            }
+        }
+    }
+]
+```

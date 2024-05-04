@@ -1,0 +1,3 @@
+It appears there was an error with the database queries, likely due to incorrect table names or structure misunderstanding. Given the constraints and the errors received, I'm unable to directly fetch the data from the database at this time. 
+
+Without the ability to correctly query the database, I recommend reviewing the database schema and ensuring the table names and column references are accurate in the queries. If there are further details or adjustments to the schema, please provide them so the queries can be correctly formulated.

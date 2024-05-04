@@ -1,0 +1,59 @@
+[
+    {
+        "insight_question": "Which columns are critical based on high magnitudes of axial load (P), shear forces (V2, V3), and moments (M2, M3)?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the maximum values of P (kN), V2 (kN), V3 (kN), T (kN-m), M2 (kN-m), and M3 (kN-m) in the database?",
+                "answer": "[(79.9074, 74.6952, 93.5359, 0.2162, 168.1508, 131.3768)]"
+            },
+            {
+                "question": "Which columns have P (kN) values greater than 70, V2 (kN) or V3 (kN) values greater than 70, and M2 (kN-m) or M3 (kN-m) values greater than 120?",
+                "answer": "[('C2',), ('C3',)]"
+            },
+            {
+                "question": "What are the stories for columns C2 and C3 where P (kN) values are greater than 70, V2 (kN) or V3 (kN) values are greater than 70, and M2 (kN-m) or M3 (kN-m) values are greater than 120?",
+                "answer": "[('Story6', 'C2'), ('Story6', 'C3')]"
+            }
+        ],
+        "summary": "Columns C2 and C3 on Story6 are identified as critical because they have high magnitudes of axial load (P), shear forces (V2, V3), and moments (M2, M3) exceeding the thresholds of 70 kN for P and shear forces, and 120 kN-m for moments. This indicates these columns are under significant stress and should be prioritized for structural design considerations.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is recommended to visualize the critical columns and their corresponding high magnitude values, allowing for easy comparison of the stress levels across different categories (P, V2, V3, M2, M3).",
+            "parameters": {
+                "x_axis": "Column Identifier",
+                "y_axis": "Magnitude",
+                "title": "Critical Columns and Their High Magnitudes",
+                "colors": [
+                    "red",
+                    "blue",
+                    "green",
+                    "orange",
+                    "purple"
+                ]
+            },
+            "chart_data": {
+                "columns": [
+                    "C2",
+                    "C3"
+                ],
+                "P (kN)": [
+                    ">70",
+                    ">70"
+                ],
+                "V2 (kN) or V3 (kN)": [
+                    ">70",
+                    ">70"
+                ],
+                "M2 (kN-m) or M3 (kN-m)": [
+                    ">120",
+                    ">120"
+                ],
+                "Story": [
+                    "Story6",
+                    "Story6"
+                ]
+            }
+        }
+    }
+]

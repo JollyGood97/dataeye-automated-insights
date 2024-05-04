@@ -1,0 +1,52 @@
+```json
+[
+    {
+        "insight_question": "How does the average marks for each subject compare between Term 1 and Term 2?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each subject in Term 1?", "answer": "[('Math', 72.0), ('English', 66.6), ('Science', 61.6)]"},
+            {"question": "What is the average marks for each subject in Term 2?", "answer": "[('English', 62.2), ('Math', 70.4), ('Science', 64.6)]"}
+        ],
+        "summary": "The average marks for Math slightly decreased from Term 1 to Term 2, while Science saw an improvement in average marks. English experienced a noticeable drop in average marks from Term 1 to Term 2. This indicates that while students maintained or improved their performance in Math and Science, there was a decline in English, suggesting a need for targeted interventions in English.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is recommended to compare the average marks for each subject across the two terms visually. It allows for easy comparison of the changes in performance between terms for each subject.",
+            "parameters": {
+                "x_axis": "Subject",
+                "y_axis": "Average Marks",
+                "title": "Comparison of Average Marks per Subject Between Term 1 and Term 2",
+                "colors": ["Term 1", "Term 2"]
+            },
+            "chart_data": {
+                "Math": {"Term 1": 72.0, "Term 2": 70.4},
+                "English": {"Term 1": 66.6, "Term 2": 62.2},
+                "Science": {"Term 1": 61.6, "Term 2": 64.6}
+            }
+        }
+    },
+    {
+        "insight_question": "How does the pass rate vary per subject between Term 1 and Term 2?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the pass rate per subject in Term 1, considering the pass mark as 45?", "answer": "[('English', 80.0), ('Math', 100.0), ('Science', 80.0)]"},
+            {"question": "What is the pass rate per subject in Term 2, considering the pass mark as 45?", "answer": "[('Science', 80.0), ('Math', 80.0), ('English', 80.0)]"}
+        ],
+        "summary": "The pass rate for Math saw a significant decline from 100% in Term 1 to 80% in Term 2, aligning with the slight decrease in average marks. Science and English maintained an 80% pass rate across both terms. The overall high pass rates indicate effective teaching strategies, but the drop in Math's pass rate suggests a need for reviewing the curriculum or teaching methods for Math in Term 2.",
+        "assumption": "Assuming a pass mark of 45 for the calculation of pass rates.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for visualizing the comparison of pass rates across subjects between the two terms. It clearly shows the differences and maintains a focus on the rate of passing per subject.",
+            "parameters": {
+                "x_axis": "Subject",
+                "y_axis": "Pass Rate (%)",
+                "title": "Pass Rate per Subject Between Term 1 and Term 2",
+                "colors": ["Term 1", "Term 2"]
+            },
+            "chart_data": {
+                "Math": {"Term 1": 100.0, "Term 2": 80.0},
+                "English": {"Term 1": 80.0, "Term 2": 80.0},
+                "Science": {"Term 1": 80.0, "Term 2": 80.0}
+            }
+        }
+    }
+]
+```

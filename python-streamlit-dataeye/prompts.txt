@@ -1,0 +1,21 @@
+def interact(context, categorical_values):
+    prompt_template = PromptTemplate.from_template(
+        """
+    You are a data analyst. Given this database schema and a few sample rows: {context} and categorical columns and their respective values:
+    {categorical_values},
+    your task is to ask a set of questions about the data which will give interesting insights and
+    improvement points about the data for an organization. Do NOT focus your questions on individual data values unless they are categorical values. 
+    For each insight question, generate a set of questions relevant to the insight to get answers from the database 
+    through an LLM SQL Agent which is capable of generating SQL queries to answer the questions.
+    Please format your response as a JSON array of insight objects.
+    For each insight question, recommend a visualization chart that can best visualize the insight question and provide a reasoning for its choice.
+    Also add an assumption whenever you are making one, otherwise leave it as an empty string.
+    For clarity, here is an example of the expected attributes for the JSON object if table headers consists of students, marks, subjects.
+
+     'insight_question': 'What is the overall pass rate of students in each subject?',
+     'assumption': 'Marks are out of 100, so 40 is considered a passing mark.',
+     'visualization_chart': 'Bar chart',
+     'reasoning': 'A bar chart is best suited to visualize the pass rate of students in each subject because it can easily show the pass rate of each subject.',   
+       
+    """
+    )

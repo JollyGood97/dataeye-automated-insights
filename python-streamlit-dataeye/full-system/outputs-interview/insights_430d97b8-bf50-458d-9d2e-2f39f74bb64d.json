@@ -1,0 +1,70 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject?",
+                "answer": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks across subjects show that Math has the highest average score (67.5), followed by English (64.4), and Science has the lowest average score (63.1). This suggests that students perform best in Math and struggle the most with Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in scores.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Different for each subject.",
+            "chart_data": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What is the average marks for each student?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each student?",
+                "answer": "[('Bob', 31.0), ('Jack', 84.83333333333333), ('John', 56.833333333333336), ('Mary', 72.66666666666667), ('Peter', 79.66666666666667)]"
+            }
+        ],
+        "summary": "The average marks per student reveal that Jack has the highest average (84.83), indicating excellent performance, while Bob has the lowest average (31.0), suggesting significant difficulties. This highlights a wide range of performance levels among students.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for showcasing the average marks of each student, making it easy to identify high and low performers.",
+            "parameters": "x_axis: Students, y_axis: Average Marks, title: Average Marks by Student, colors: Different for each student.",
+            "chart_data": "[('Bob', 31.0), ('Jack', 84.83333333333333), ('John', 56.833333333333336), ('Mary', 72.66666666666667), ('Peter', 79.66666666666667)]"
+        }
+    },
+    {
+        "insight_question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+                "answer": "[('Science', 80), ('Math', 80), ('English', 80)]"
+            }
+        ],
+        "summary": "The pass rate for each subject is 80%, indicating a consistent level of performance across all subjects with respect to passing. This uniform pass rate suggests that while there are differences in average scores, the majority of students are achieving the minimum required marks.",
+        "assumption": "Marks scored below 50 is considered as fail.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is effective for comparing pass rates across subjects, showing uniformity or variance in student success rates.",
+            "parameters": "x_axis: Subjects, y_axis: Pass Rate (%), title: Pass Rate by Subject, colors: Different for each subject.",
+            "chart_data": "[('Science', 80), ('Math', 80), ('English', 80)]"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of marks across terms?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of marks across terms?",
+                "answer": "[(1, 60.411764705882355), (2, 71.0)]"
+            }
+        ],
+        "summary": "The distribution of marks shows an improvement from Term 1 (average: 60.41) to Term 2 (average: 71.0), indicating that students' performance has generally improved over time. This could reflect the effectiveness of teaching methods or students' adaptation to the curriculum.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is best suited for showing trends over time, such as the improvement in marks from one term to the next.",
+            "parameters": "x_axis: Term, y_axis: Average Marks, title: Average Marks by Term, colors: A single color for the line.",
+            "chart_data": "[(1, 60.411764705882355), (2, 71.0)]"
+        }
+    }
+]

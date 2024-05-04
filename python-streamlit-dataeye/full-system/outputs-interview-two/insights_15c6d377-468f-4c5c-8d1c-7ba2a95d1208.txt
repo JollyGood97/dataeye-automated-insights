@@ -1,0 +1,59 @@
+Based on the data retrieved and the analysis conducted, here are the insights uncovered from the dataset:
+
+```json
+[
+    {
+        "insight_question": "What is the average marks for each subject across all terms?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject across all terms?",
+                "answer": "[('Math', 71.2), ('English', 64.4), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "Math has the highest average marks across all terms, followed by English and then Science. This suggests that students perform best in Math and struggle the most with Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is best for comparing the average marks across different subjects, making it easy to see which subjects have higher or lower averages.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject",
+            "chart_data": "Subjects: ['Math', 'English', 'Science'], Average Marks: [71.2, 64.4, 63.1]"
+        }
+    },
+    {
+        "insight_question": "How many students have scored below 50 in each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many students have scored below 50 in each subject?",
+                "answer": "[('Science', 2), ('English', 2), ('Math', 1)]"
+            }
+        ],
+        "summary": "Science and English each have two students scoring below 50, while Math has only one. This indicates that students face more difficulties in Science and English compared to Math.",
+        "assumption": "Assuming a mark below 50 is considered failing, indicating areas where additional support may be needed.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart effectively shows the count of students scoring below 50 in each subject, highlighting subjects where students struggle the most.",
+            "parameters": "x_axis: Subjects, y_axis: Number of Students, title: Students Scoring Below 50 by Subject",
+            "chart_data": "Subjects: ['Science', 'English', 'Math'], Number of Students: [2, 2, 1]"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of marks for each term?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of marks for each term?",
+                "answer": "[(1, 66.73, 35, 90), (2, 65.73, 25, 93)]"
+            }
+        ],
+        "summary": "The average marks are slightly higher in Term 1 (66.73) compared to Term 2 (65.73), with a broader range of marks in Term 1 (35 to 90) than in Term 2 (25 to 93). This suggests a slight variation in performance between terms, with Term 1 having a broader distribution.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Box Plot",
+            "reasoning": "A box plot is ideal for showing the distribution of marks for each term, including the median, quartiles, and any outliers, providing a clear picture of how student performance varies by term.",
+            "parameters": "x_axis: Term, y_axis: Marks, title: Distribution of Marks by Term",
+            "chart_data": "Terms: [1, 2], Marks: [[35, 90], [25, 93]], Averages: [66.73, 65.73]"
+        }
+    }
+]
+```
+
+This analysis helps to identify areas where students excel or need improvement, which subjects require more focus, and how performance trends over different terms. These insights could guide targeted interventions, curriculum adjustments, and resource allocation to enhance educational outcomes.

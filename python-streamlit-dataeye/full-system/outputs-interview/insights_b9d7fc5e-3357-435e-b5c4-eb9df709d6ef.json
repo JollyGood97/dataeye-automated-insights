@@ -1,0 +1,77 @@
+[
+    {
+        "insight_question": "Which columns are critical based on their force magnitudes, and at which story are they located?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the maximum value of P (kN), V2 (kN), V3 (kN), T (kN-m), M2 (kN-m), and M3 (kN-m) across all stories?",
+                "answer": "[(3369.2624, 74.6952, 93.9202, 0.3018, 168.1508, 131.9846)]"
+            },
+            {
+                "question": "Which columns have the maximum values of P (kN), V2 (kN), V3 (kN), T (kN-m), M2 (kN-m), and M3 (kN-m) and what are their corresponding stories?",
+                "answer": "[('Story6', 'C8', 3369.2624, 74.6952, 93.9202, 0.3018, 168.1508, 131.9846)]"
+            },
+            {
+                "question": "Which stories have columns with P (kN) values exceeding 3000?",
+                "answer": "[('Story1',)]"
+            },
+            {
+                "question": "Which stories have columns with V2 (kN) values exceeding 70?",
+                "answer": "[('Story6',)]"
+            },
+            {
+                "question": "Which stories have columns with V3 (kN) values exceeding 90?",
+                "answer": "[('Story6',)]"
+            },
+            {
+                "question": "Which stories have columns with T (kN-m) values exceeding 0.3?",
+                "answer": "[('Story1',)]"
+            },
+            {
+                "question": "Which stories have columns with M2 (kN-m) values exceeding 160?",
+                "answer": "[('Story6',)]"
+            },
+            {
+                "question": "Which stories have columns with M3 (kN-m) values exceeding 130?",
+                "answer": "[('Story6',)]"
+            }
+        ],
+        "summary": "The critical columns based on the magnitudes of forces (axial, shear, torsion, and moments) are predominantly found in Story6, with column C8 being particularly critical as it has the maximum values of all the forces considered. Additionally, Story1 also displays critical conditions for axial load (P) and torsion (T). This indicates that the highest structural demands are concentrated at the top (Story6) and bottom (Story1) of the building.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the magnitude of forces across different stories and columns, highlighting the critical ones. It enables a clear visual distinction between the forces in each story and emphasizes the columns with the highest force demands.",
+            "parameters": {
+                "x_axis": "Story",
+                "y_axis": "Force Magnitude",
+                "title": "Critical Columns and Their Force Magnitudes by Story",
+                "colors": "Different colors for each force type (P, V2, V3, T, M2, M3)"
+            },
+            "chart_data": {
+                "stories": [
+                    "Story1",
+                    "Story6"
+                ],
+                "P (kN)": {
+                    "Story1": 3369.2624,
+                    "Story6": 0
+                },
+                "V2 (kN)": {
+                    "Story6": 74.6952
+                },
+                "V3 (kN)": {
+                    "Story6": 93.9202
+                },
+                "T (kN-m)": {
+                    "Story1": 0.3018,
+                    "Story6": 0
+                },
+                "M2 (kN-m)": {
+                    "Story6": 168.1508
+                },
+                "M3 (kN-m)": {
+                    "Story6": 131.9846
+                }
+            }
+        }
+    }
+]

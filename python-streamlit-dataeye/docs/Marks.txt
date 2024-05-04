@@ -1,0 +1,20 @@
+Uploaded CSV Dataset Summary:
+- File Name: Marks.csv
+- Total Rows: 30
+- File Path: ./csvs/Marks.csv
+This CSV contains these column headers or attributes in comma separated form: Student_Name, Subject, Marks_out_of_100, Term
+Summary generated from the dataset:
+Numerical Data Summary:
+                  count       mean        std   min    25%   50%   75%   max
+Marks_out_of_100   30.0  65.000000  20.623054  23.0  55.25  70.0  80.0  93.0
+Term               30.0   1.433333   0.504007   1.0   1.00   1.0   2.0   2.0
+
+Categorical Data Summary:
+             count unique   top freq
+Student_Name    30      5  Jack    6
+Subject         30      3  Math   10
+This CSV contains the data for each column as an array:
+Student_Name: ["Jack", "John", "Mary", "Peter", "Bob", "Jack", "John", "Mary", "Peter", "Bob", "Jack", "John", "Mary", "Peter", "Bob", "Jack", "John", "Mary", "Peter", "Bob", "Jack", "John", "Mary", "Peter", "Bob", "Jack", "John", "Mary", "Peter", "Bob"]
+Subject: ["Math", "Math", "Math", "Math", "Math", "English", "English", "English", "English", "English", "Science", "Science", "Science", "Science", "Science", "Math", "Math", "Math", "Math", "Math", "English", "English", "English", "English", "English", "Science", "Science", "Science", "Science", "Science"]
+Marks_out_of_100: [90, 60, 70, 80, 23, 85, 60, 80, 68, 40, 75, 55, 65, 78, 35, 93, 56, 78, 92, 33, 86, 50, 70, 75, 30, 80, 60, 73, 85, 25]
+Term: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2]

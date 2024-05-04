@@ -1,0 +1,58 @@
+```json
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Math?",
+                "answer": "The average marks for Math is 67.5."
+            },
+            {
+                "question": "What is the average marks for English?",
+                "answer": "The average marks for English is 64.4."
+            },
+            {
+                "question": "What is the average marks for Science?",
+                "answer": "The average marks for Science is 63.1."
+            }
+        ],
+        "summary": "The analysis shows that the average marks for Math are the highest among the three subjects. English has the second-highest average marks, followed by Science. This insight can help in understanding the performance of students in different subjects.",
+        "assumption": "Assuming the marks are out of 100 for all subjects.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for comparing the average marks of different subjects visually.",
+            "parameters": {
+                "x_axis": ["Math", "English", "Science"],
+                "y_axis": [67.5, 64.4, 63.1],
+                "title": "Average Marks by Subject",
+                "colors": ["#FF5733", "#33FF57", "#3357FF"]
+            }
+        }
+    },
+    {
+        "insight_question": "How do the average marks for Math vary across different terms?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Math in Term 1?",
+                "answer": "The average marks for Math in Term 1 is 59.33."
+            },
+            {
+                "question": "What is the average marks for Math in Term 2?",
+                "answer": "The average marks for Math in Term 2 is 79.75."
+            }
+        ],
+        "summary": "The analysis reveals a significant difference in the average marks for Math between Term 1 and Term 2. The average marks are higher in Term 2 compared to Term 1, indicating a potential improvement in performance over time.",
+        "assumption": "Assuming the terms represent different academic periods.",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart can effectively show the trend of average marks for Math across different terms.",
+            "parameters": {
+                "x_axis": ["Term 1", "Term 2"],
+                "y_axis": [59.33, 79.75],
+                "title": "Average Marks for Math by Term",
+                "colors": ["#FF5733"]
+            }
+        }
+    }
+]
+```

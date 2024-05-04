@@ -1,0 +1,70 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject?",
+                "answer": "[('Math', 71.2), ('English', 64.4), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks across subjects show Math as the highest-scoring subject with an average of 71.2, followed by English and Science with averages of 64.4 and 63.1 respectively. This indicates that students perform best in Math and may need additional support in English and Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in performance for each subject side by side.",
+            "parameters": "x_axis: ['Math', 'English', 'Science'], y_axis: [71.2, 64.4, 63.1], title: 'Average Marks per Subject', colors: ['blue', 'green', 'red']",
+            "chart_data": "[('Math', 71.2), ('English', 64.4), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What percentage of students passed in each subject, considering 45 as the pass mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What percentage of students passed in each subject, considering 45 as the pass mark?",
+                "answer": "[('English', 80), ('Math', 90), ('Science', 80)]"
+            }
+        ],
+        "summary": "The pass rate in Math is the highest at 90%, with English and Science both having a pass rate of 80%. This suggests that while a majority of students are passing each subject, there might be room for intervention in English and Science to improve student outcomes.",
+        "assumption": "Assuming a pass mark of 45 for this analysis.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is chosen to visually represent the pass rates in each subject, making it easier to identify subjects where students are performing well versus those where improvement is needed.",
+            "parameters": "x_axis: ['English', 'Math', 'Science'], y_axis: [80, 90, 80], title: 'Pass Rate per Subject', colors: ['green', 'blue', 'red']",
+            "chart_data": "[('English', 80), ('Math', 90), ('Science', 80)]"
+        }
+    },
+    {
+        "insight_question": "Which subject has the lowest pass rate?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which subject has the lowest pass rate?",
+                "answer": "[('English', 0.8)]"
+            }
+        ],
+        "summary": "English has the lowest pass rate among the subjects, with an 80% success rate. This insight suggests a need for targeted interventions in English to help increase the pass rate.",
+        "assumption": "Pass rates are calculated based on the assumption that a score above 45 is a pass.",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "A pie chart is suitable for showcasing the distribution of pass rates across subjects, with a clear visual indication of which subject has the lowest pass rate.",
+            "parameters": "labels: ['English', 'Math', 'Science'], values: [80, 90, 80], title: 'Pass Rate Distribution per Subject'",
+            "chart_data": "[('English', 80), ('Math', 90), ('Science', 80)]"
+        }
+    },
+    {
+        "insight_question": "Who are the top 3 performers across all subjects?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Who are the top 3 performers across all subjects?",
+                "answer": "[('Jack', 509), ('Peter', 478), ('Mary', 436)]"
+            }
+        ],
+        "summary": "The top three performers across all subjects are Jack, Peter, and Mary, with total marks of 509, 478, and 436 respectively. Recognizing these students could motivate them and others to excel academically.",
+        "assumption": "Performance is measured by total marks across all subjects.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is recommended to highlight the top performers by showcasing their total marks, enabling a clear comparison among them.",
+            "parameters": "x_axis: ['Jack', 'Peter', 'Mary'], y_axis: [509, 478, 436], title: 'Top 3 Performers', colors: ['gold', 'silver', 'bronze']",
+            "chart_data": "[('Jack', 509), ('Peter', 478), ('Mary', 436)]"
+        }
+    }
+]

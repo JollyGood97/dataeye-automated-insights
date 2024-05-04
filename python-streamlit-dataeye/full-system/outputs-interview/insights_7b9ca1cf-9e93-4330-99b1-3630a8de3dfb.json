@@ -1,0 +1,39 @@
+[
+    {
+        "insight_question": "Which stories are critical based on the highest forces and moments experienced by columns?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which story has the highest axial load (P)?",
+                "answer": "[('Story1', 79.9074)]"
+            },
+            {
+                "question": "Which story has the highest shear force V2?",
+                "answer": "[('Story6', 74.6952)]"
+            },
+            {
+                "question": "Which story has the highest shear force V3?",
+                "answer": "[('Story6', 93.5359)]"
+            },
+            {
+                "question": "Which story has the highest torsion (T)?",
+                "answer": "[('Story6', 0.2162)]"
+            },
+            {
+                "question": "Which story has the highest moment M2?",
+                "answer": "[('Story6', 168.1508)]"
+            },
+            {
+                "question": "Which story has the highest moment M3?",
+                "answer": "[('Story6', 131.3768)]"
+            }
+        ],
+        "summary": "The analysis reveals that the highest axial load is found at Story1, indicating criticality for compressive forces, while Story6 is critical for shear forces, torsion, and moments. This suggests differing structural needs across the building's height.",
+        "assumption": "Higher magnitudes of forces and moments indicate critical points for structural design, regardless of the direction indicated by positive or negative values.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "Bar charts are effective for comparing numerical values across different categories, making it easier to visualize and compare the magnitude of forces and moments across stories.",
+            "parameters": "x_axis: Stories, y_axis: Magnitude of forces/moments, title: Varies, colors: Unique per story or force type",
+            "chart_data": "Data provided above for each force/moment type."
+        }
+    }
+]

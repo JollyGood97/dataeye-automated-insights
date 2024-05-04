@@ -1,0 +1,29 @@
+Based on the insights required for a student performance database in an educational context, such as ABC Primary School, and the data obtained from the database, here are the valuable insights uncovered:
+
+```json
+[
+    {
+        "insight_question": "How does the average marks per subject vary between Term 1 and Term 2?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject in Term 1?",
+                "answer": "[('Math', 72.0), ('English', 66.6), ('Science', 61.6)]"
+            },
+            {
+                "question": "What is the average marks for each subject in Term 2?",
+                "answer": "[('Math', 70.4), ('Science', 64.6), ('English', 62.2)]"
+            }
+        ],
+        "summary": "The average marks for Math and English saw a slight decline from Term 1 to Term 2, whereas Science marks increased. This suggests a potential shift in focus or difficulty level between the terms. It might indicate areas where students are struggling or subjects that may require additional teaching resources or methodologies to be applied.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is recommended to visualize the trend of average marks across the two terms for each subject. It clearly shows how student performance in each subject has changed over time, highlighting any increases or decreases in performance.",
+            "parameters": "x_axis: ['Term 1', 'Term 2'], y_axis: ['Average Marks'], title: 'Average Marks per Subject Across Terms', colors: ['Math', 'English', 'Science']",
+            "chart_data": "{'Math': [72.0, 70.4], 'English': [66.6, 62.2], 'Science': [61.6, 64.6]}"
+        }
+    }
+]
+```
+
+This insight addresses the variation in average marks across subjects between the two terms, providing a base for further analysis into specific areas of concern or interest, such as subject difficulty, teaching effectiveness, or student engagement strategies.

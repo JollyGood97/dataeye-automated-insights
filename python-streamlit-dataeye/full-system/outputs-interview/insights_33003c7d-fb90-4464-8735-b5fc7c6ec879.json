@@ -1,0 +1,107 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Math?",
+                "answer": "[('Math', 67.5)]"
+            },
+            {
+                "question": "What is the average marks for English?",
+                "answer": "[('English', 64.4)]"
+            },
+            {
+                "question": "What is the average marks for Science?",
+                "answer": "[('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks for each subject show that Math has the highest average score of 67.5, followed by English with 64.4, and Science has the lowest with 63.1. This indicates that students perform best in Math and struggle the most with Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in values for easy comparison.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks per Subject, colors: Different colors for each subject.",
+            "chart_data": "{'Subjects': ['Math', 'English', 'Science'], 'Average Marks': [67.5, 64.4, 63.1]}"
+        }
+    },
+    {
+        "insight_question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the pass rate for Math, considering 50 as the passing mark?",
+                "answer": "[('Math', 80)]"
+            },
+            {
+                "question": "What is the pass rate for English, considering 50 as the passing mark?",
+                "answer": "[('English', 80)]"
+            },
+            {
+                "question": "What is the pass rate for Science, considering 50 as the passing mark?",
+                "answer": "[('Science', 80)]"
+            }
+        ],
+        "summary": "The pass rate for all subjects is uniformly 80%, indicating that despite the differences in average marks, the majority of students are achieving the minimum required marks across all subjects.",
+        "assumption": "A passing mark is considered to be 50 out of 100.",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "A pie chart is suitable for showing the proportion of students passing in each subject, highlighting the uniformity in pass rates across subjects.",
+            "parameters": "labels: Subjects, values: Pass Rates, title: Pass Rate per Subject.",
+            "chart_data": "{'Subjects': ['Math', 'English', 'Science'], 'Pass Rates': [80, 80, 80]}"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of marks for each term?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of marks for Term 1?",
+                "answer": "[(1, 60.411764705882355, 23, 90)]"
+            },
+            {
+                "question": "What is the distribution of marks for Term 2?",
+                "answer": "[(2, 71.0, 25, 93)]"
+            }
+        ],
+        "summary": "The distribution of marks shows that Term 2 has a higher average mark of 71.0 compared to Term 1, which has an average of 60.4. This suggests an overall improvement in student performance from Term 1 to Term 2.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is chosen to illustrate the trend in marks distribution across the two terms, showing the progression in average marks.",
+            "parameters": "x_axis: Term, y_axis: Average Marks, title: Distribution of Marks Across Terms, line_colors: Different colors for each term.",
+            "chart_data": "{'Term': [1, 2], 'Average Marks': [60.4, 71.0]}"
+        }
+    },
+    {
+        "insight_question": "Which student has the highest average marks?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which student has the highest average marks?",
+                "answer": "[('Jack', 84.83333333333333)]"
+            }
+        ],
+        "summary": "Jack has the highest average marks among all students, with an average of 84.83. This indicates that Jack is the top-performing student in the dataset.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for showcasing individual performance, especially when highlighting the top performer among a group.",
+            "parameters": "x_axis: Student Name, y_axis: Average Marks, title: Top Performing Student, colors: Color representing high achievement.",
+            "chart_data": "{'Student Name': ['Jack'], 'Average Marks': [84.83]}"
+        }
+    },
+    {
+        "insight_question": "Which subject has the lowest average marks?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which subject has the lowest average marks?",
+                "answer": "[('Science', 63.1)]"
+            }
+        ],
+        "summary": "Science has the lowest average marks of 63.1, suggesting that it is the subject where students face the most difficulty.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is effective for highlighting the subject with the lowest average marks, making it clear which subject needs more focus.",
+            "parameters": "x_axis: Subject, y_axis: Average Marks, title: Subject with Lowest Average Marks, colors: Color highlighting the subject in focus.",
+            "chart_data": "{'Subject': ['Science'], 'Average Marks': [63.1]}"
+        }
+    }
+]

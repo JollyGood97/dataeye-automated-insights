@@ -1,0 +1,107 @@
+[
+    {
+        "insight_question": "How does gender impact salary and pay components?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average base salary by gender?",
+                "answer": "[('M', 92382.92975236966), ('F', 87497.50279041701)]"
+            },
+            {
+                "question": "What is the average overtime pay by gender?",
+                "answer": "[('M', 11872.891288581553), ('F', 2927.595639614857)]"
+            },
+            {
+                "question": "What is the average longevity pay by gender?",
+                "answer": "[('M', 1828.1224253668356), ('F', 1133.9408986703345)]"
+            }
+        ],
+        "summary": "Men generally have higher salaries across all components (base salary, overtime pay, and longevity pay) compared to women. This highlights a gender pay gap within the organization.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is best suited to compare the average salary components across genders. It clearly depicts differences between groups for each salary component.",
+            "parameters": "x_axis: ['Base Salary', 'Overtime Pay', 'Longevity Pay'], y_axis: ['Amount'], title: 'Average Salary Components by Gender', colors: ['blue', 'pink']",
+            "chart_data": {
+                "Categories": [
+                    "Base Salary",
+                    "Overtime Pay",
+                    "Longevity Pay"
+                ],
+                "Male": [
+                    92382.93,
+                    11872.89,
+                    1828.12
+                ],
+                "Female": [
+                    87497.5,
+                    2927.6,
+                    1133.94
+                ]
+            }
+        }
+    },
+    {
+        "insight_question": "What are the top 5 divisions with the highest employee counts?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of employees by division?",
+                "answer": "[('HHS 60 School Health Services', 399), ('DOT 50 Transit Gaithersburg Ride On', 352), ('DOT 50 Transit Silver Spring Ride On', 294), ('HHS 60 Office of Eligibility and Support Services', 272), ('HHS 60 Behavioral Health and Crisis Services Division', 238)]"
+            }
+        ],
+        "summary": "The divisions with the highest employee counts are primarily in health services and transit services, indicating these areas as major operational focuses of the organization.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart efficiently shows the distribution of employees among the top 5 divisions, making it easy to identify which divisions have the highest employee counts.",
+            "parameters": "x_axis: ['Division'], y_axis: ['Employee Count'], title: 'Top 5 Divisions by Employee Count', colors: ['green']",
+            "chart_data": {
+                "Division": [
+                    "HHS 60 School Health Services",
+                    "DOT 50 Transit Gaithersburg Ride On",
+                    "DOT 50 Transit Silver Spring Ride On",
+                    "HHS 60 Office of Eligibility and Support Services",
+                    "HHS 60 Behavioral Health and Crisis Services Division"
+                ],
+                "Employee Count": [
+                    399,
+                    352,
+                    294,
+                    272,
+                    238
+                ]
+            }
+        }
+    },
+    {
+        "insight_question": "Which divisions have the highest average base salaries?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average base salary by division?",
+                "answer": "[('POL 47 HQ Police Chief', 258000.0), ('CAT 30 County Attorney', 258000.0), ('DOT 50 Director', 244000.0), ('PRO 35 Procurement Director', 236000.0), ('FIN 32 Director', 236000.0)]"
+            }
+        ],
+        "summary": "The top divisions in terms of average base salaries are led by the police chief and county attorney positions, followed by directors of various departments. This reflects the organizational structure and the value placed on leadership roles.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for showcasing the differences in average base salaries across divisions, highlighting the disparities in compensation for leadership roles.",
+            "parameters": "x_axis: ['Division'], y_axis: ['Average Base Salary'], title: 'Top Divisions by Average Base Salary', colors: ['red']",
+            "chart_data": {
+                "Division": [
+                    "POL 47 HQ Police Chief",
+                    "CAT 30 County Attorney",
+                    "DOT 50 Director",
+                    "PRO 35 Procurement Director",
+                    "FIN 32 Director"
+                ],
+                "Average Base Salary": [
+                    258000.0,
+                    258000.0,
+                    244000.0,
+                    236000.0,
+                    236000.0
+                ]
+            }
+        }
+    }
+]

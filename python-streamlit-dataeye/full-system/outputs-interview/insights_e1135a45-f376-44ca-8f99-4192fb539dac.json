@@ -1,0 +1,47 @@
+[
+    {
+        "insight_question": "How do load values vary across different stories?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the average load values (P, V2, V3, T, M2, M3) for each story?",
+                "answer": "The average load values decrease from Story1 to Story5, indicating the highest loads are on the lower floors."
+            }
+        ],
+        "summary": "Lower stories bear higher loads, crucial for structural design and safety.",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart clearly shows the decreasing pattern of load values, critical for structural safety analysis.",
+            "parameters": "x_axis: 'Story', y_axis: 'Average Load Values', title: 'Average Load Values by Story', colors: Variable per load type."
+        }
+    },
+    {
+        "insight_question": "What are the most common output cases for each story?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the most common output cases for each story?",
+                "answer": "The most common output case for each story is 'Modal'."
+            }
+        ],
+        "summary": "Modal analysis is a significant concern across all stories, crucial for dynamic response evaluation.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart effectively showcases the frequency of different output cases, highlighting the dominance of modal analysis.",
+            "parameters": "x_axis: 'Story', y_axis: 'Frequency of Output Cases', title: 'Most Common Output Cases by Story', colors: One color."
+        }
+    },
+    {
+        "insight_question": "How do the average load values vary across different case types?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How do the average load values vary across different case types?",
+                "answer": "'Combination' shows the highest average loads, indicating its importance in structural design."
+            }
+        ],
+        "summary": "Combination loads play a critical role in structural safety, necessitating their consideration in design.",
+        "visualization_chart": {
+            "chart_type": "Grouped Bar Chart",
+            "reasoning": "A grouped bar chart compares average load values across case types, highlighting the necessity of combination loads.",
+            "parameters": "x_axis: 'Case Type', y_axis: 'Average Load Values', title: 'Average Load Values by Case Type', colors: Different for each load parameter."
+        }
+    }
+]

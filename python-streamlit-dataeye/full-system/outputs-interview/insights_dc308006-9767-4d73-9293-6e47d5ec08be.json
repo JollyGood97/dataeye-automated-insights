@@ -1,0 +1,52 @@
+[
+    {
+        "insight_question": "What are the maximum force values and their corresponding stories?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the maximum axial load (P) value and the associated story?",
+                "answer": "[(3369.2624, 'Story1')]"
+            },
+            {
+                "question": "What is the maximum shear force (V2 and V3) value and the associated story?",
+                "answer": "[(74.6952, 93.9202, 'Story6')]"
+            },
+            {
+                "question": "What is the maximum moment (M2 and M3) value and the associated story?",
+                "answer": "[(168.1508, 131.9846, 'Story6')]"
+            }
+        ],
+        "summary": "The maximum axial load is observed at Story1, indicating higher axial stress at lower levels of the building. The maximum shear forces and moments are noted at Story6, highlighting potential areas of concern for lateral stability and bending at higher levels.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for comparing the maximum values of axial loads, shear forces, and moments across different stories, clearly showing which stories experience the highest forces.",
+            "parameters": "x_axis: ['Axial Load', 'Shear Force V2', 'Shear Force V3', 'Moment M2', 'Moment M3'], y_axis: Maximum force values, title: 'Maximum Forces in Building Columns', colors: ['blue', 'orange', 'green', 'red', 'purple']",
+            "chart_data": "{'Axial Load': [3369.2624], 'Shear Force V2': [74.6952], 'Shear Force V3': [93.9202], 'Moment M2': [168.1508], 'Moment M3': [131.9846], 'Story': ['Story1', 'Story6', 'Story6', 'Story6', 'Story6']}"
+        }
+    },
+    {
+        "insight_question": "How do average force values vary across stories?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the average axial load (P) values for each story?",
+                "answer": "[('Story1', 356.66400590277806), ('Story2', 296.6569253472225), ('Story3', 236.7121823596182), ('Story4', 176.936644444444), ('Story5', 117.35267222222228)]"
+            },
+            {
+                "question": "What are the average shear force (V2 and V3) values for each story?",
+                "answer": "[('Story1', 5.021195138888884, 3.3419402777777845), ('Story2', 5.927700347222234, 5.832496875000011), ('Story3', 5.502411805555554, 5.412305958263891), ('Story4', 5.414593749999987, 5.601224104548616), ('Story5', 4.975143055555562, 5.113501175104159)]"
+            },
+            {
+                "question": "What are the average moment (M2 and M3) values for each story?",
+                "answer": "[('Story1', 4.16523518518518, 6.103096990740738), ('Story2', 6.350695710844904, 6.417871990740737), ('Story3', 5.823529745370367, 5.992339236111121), ('Story4', 6.015168402777783, 5.896492476851853), ('Story5', 5.576892410373853, 5.461610778201388)]"
+            }
+        ],
+        "summary": "Average axial loads decrease from Story1 to Story5, confirming the expectation that lower stories bear more weight. Average shear forces and moments do not follow a clear trend across stories, suggesting that lateral forces and bending moments are influenced by factors other than vertical position alone.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart effectively illustrates the trend of average forces across stories, showing how axial loads decrease with height, while shear forces and moments fluctuate.",
+            "parameters": "x_axis: ['Story1', 'Story2', 'Story3', 'Story4', 'Story5'], y_axis: Average force values, title: 'Average Forces Across Stories', colors: ['blue', 'orange', 'green']",
+            "chart_data": "{'Axial Load': [356.664, 296.657, 236.712, 176.937, 117.353], 'Shear Force V2': [5.021, 5.928, 5.502, 5.415, 4.975], 'Shear Force V3': [3.342, 5.832, 5.412, 5.601, 5.114], 'Moment M2': [4.165, 6.351, 5.824, 6.015, 5.577], 'Moment M3': [6.103, 6.418, 5.992, 5.896, 5.462]}"
+        }
+    }
+]

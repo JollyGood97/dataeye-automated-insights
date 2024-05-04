@@ -1,0 +1,60 @@
+```json
+[
+    {
+        "insight_question": "How does the volume of Movies compare to TV Shows?",
+        "questions_and_answers_from_tool": [
+            {"question": "How many Movies and TV Shows are there?", "answer": "[(6131, 'Movie'), (2676, 'TV Show')]"}
+        ],
+        "summary": "There are significantly more Movies (6131) than TV Shows (2676) in the database. This indicates a higher production or acquisition volume of movies compared to TV shows.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the quantity of two categories, making it easy to see the difference between the number of Movies and TV Shows.",
+            "parameters": "x_axis: ['Movies', 'TV Shows'], y_axis: ['Quantity'], title: 'Movies vs TV Shows', colors: ['blue', 'red']",
+            "chart_data": "{'Movies': 6131, 'TV Shows': 2676}"
+        }
+    },
+    {
+        "insight_question": "What are the top 5 countries with the most content produced?",
+        "questions_and_answers_from_tool": [
+            {"question": "What are the top 5 countries with the most content produced?", "answer": "[('United States', 2818), ('India', 972), (None, 831), ('United Kingdom', 419), ('Japan', 245)]"}
+        ],
+        "summary": "The United States, India, United Kingdom, and Japan are the top countries in terms of content production, with the United States leading significantly. The presence of 'None' indicates missing data for a considerable amount of content.",
+        "assumption": "Assuming 'None' represents content with unspecified country of origin.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for showcasing the volume of content production across different countries, highlighting the leading contributors.",
+            "parameters": "x_axis: ['United States', 'India', 'United Kingdom', 'Japan'], y_axis: ['Content Count'], title: 'Top Content Producing Countries', colors: ['green', 'yellow', 'blue', 'orange']",
+            "chart_data": "{'United States': 2818, 'India': 972, 'United Kingdom': 419, 'Japan': 245}"
+        }
+    },
+    {
+        "insight_question": "What are the most common ratings assigned to content?",
+        "questions_and_answers_from_tool": [
+            {"question": "What are the most common ratings assigned to content?", "answer": "[('TV-MA', 3207), ('TV-14', 2160), ('TV-PG', 863), ('R', 799), ('PG-13', 490)]"}
+        ],
+        "summary": "The most common ratings for content are TV-MA and TV-14, indicating a significant portion of the content is aimed at mature audiences. This suggests a content strategy that focuses more on adult viewers.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "A pie chart is best for showing the proportion of each rating category out of the total, providing a clear visual of the distribution of content ratings.",
+            "parameters": "labels: ['TV-MA', 'TV-14', 'TV-PG', 'R', 'PG-13'], values: [3207, 2160, 863, 799, 490], title: 'Distribution of Content Ratings'",
+            "chart_data": "{'TV-MA': 3207, 'TV-14': 2160, 'TV-PG': 863, 'R': 799, 'PG-13': 490}"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of content added per year for the last 5 years?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the distribution of content added per year for the last 5 years?", "answer": "[(2018, 6), (2017, 16), (2016, 23), (2015, 9), (2014, 9)]"}
+        ],
+        "summary": "The data shows a decrease in the number of content items added in the most recent years listed, suggesting a potential shift in content strategy or acquisition. The peak in 2016 could indicate a year of significant content addition.",
+        "assumption": "Assuming the data for 2018 is complete and not partial.",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is suitable for displaying trends over time, in this case, showing the fluctuation in the volume of content added each year.",
+            "parameters": "x_axis: ['2014', '2015', '2016', '2017', '2018'], y_axis: ['Content Added'], title: 'Content Added Per Year (Last 5 Years)', colors: ['purple']",
+            "chart_data": "{'2014': 9, '2015': 9, '2016': 23, '2017': 16, '2018': 6}"
+        }
+    }
+]
+```

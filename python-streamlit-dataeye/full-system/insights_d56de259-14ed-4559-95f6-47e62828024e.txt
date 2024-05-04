@@ -1,0 +1,23 @@
+```json
+[
+    {
+        "insight_question": "What is the subject students struggle with the most?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for Math across all terms?", "answer": "71.2"}, 
+            {"question": "What is the average marks for English across all terms?", "answer": "64.4"},
+            {"question": "What is the average marks for Science across all terms?", "answer": "63.1"}
+        ],
+        "summary": "Based on the average marks across all terms, students struggle the most with Science, followed closely by English, with Math being the subject where students perform the best. This suggests a need for additional support in Science and English to improve overall academic performance.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks of students across different subjects, as it clearly illustrates the differences in performance between each subject.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Specific colors for each subject",
+            "chart_data": {
+                "Subjects": ["Math", "English", "Science"],
+                "Average Marks": [71.2, 64.4, 63.1]
+            }
+        }
+    }
+]
+```

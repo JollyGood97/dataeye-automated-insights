@@ -1,0 +1,119 @@
+{
+    "insights": [
+        {
+            "insight_question": "How does the student enrollment and average marks vary across different subjects?",
+            "questions_and_answers_from_tool": [
+                {
+                    "question": "How many students are enrolled in each subject?",
+                    "answer": "English: 5, Math: 5, Science: 5"
+                },
+                {
+                    "question": "What is the average marks for each subject?",
+                    "answer": "English: 64.4, Math: 67.5, Science: 63.1"
+                }
+            ],
+            "summary": "This insight provides information on the distribution of students across different subjects and their average performance. It can help in understanding the popularity of subjects among students and the average academic performance in each subject.",
+            "assumption": "Assuming that each student is enrolled in at least one subject and that the average marks accurately represent the performance in each subject.",
+            "visualization_chart": {
+                "chart_type": "Pie Chart",
+                "reasoning": "A pie chart is suitable for showing the distribution of students across different subjects and their average marks.",
+                "parameters": {
+                    "labels": ["English", "Math", "Science"],
+                    "values_enrollment": [5, 5, 5],
+                    "values_avg_marks": [64.4, 67.5, 63.1],
+                    "title": "Student Enrollment and Average Marks by Subject",
+                    "colors": ["#FF5733", "#33FF57", "#3357FF"]
+                }
+            }
+        }
+    ]
+}
+{
+    "insights": [
+        {
+            "insight_question": "What is the average marks for each subject?",
+            "questions_and_answers_from_tool": [
+                {
+                    "question": "What is the average marks for Math?",
+                    "answer": "The average marks for Math is 67.5."
+                },
+                {
+                    "question": "What is the average marks for English?",
+                    "answer": "The average marks for English is 64.4."
+                },
+                {
+                    "question": "What is the average marks for Science?",
+                    "answer": "The average marks for Science is 63.1."
+                }
+            ],
+            "summary": "The organization can use this insight to understand the performance of students in different subjects. It can help in identifying areas where students may need more support or resources.",
+            "assumption": "Assuming that the marks are out of 100 and represent the overall performance in each subject.",
+            "visualization_chart": {
+                "chart_type": "Bar Chart",
+                "reasoning": "A bar chart is suitable for comparing the average marks across different subjects visually.",
+                "parameters": {
+                    "x_axis": ["Math", "English", "Science"],
+                    "y_axis": [67.5, 64.4, 63.1],
+                    "title": "Average Marks by Subject",
+                    "colors": ["#FF5733", "#33FF57", "#3357FF"]
+                }
+            }
+        },
+        {
+            "insight_question": "How do the average marks vary for each student across different terms?",
+            "questions_and_answers_from_tool": [
+                {
+                    "question": "What is the average marks for each student overall?",
+                    "answer": "Bob: 31.0, Jack: 84.8, John: 56.8, Mary: 72.7, Peter: 79.7"
+                },
+                {
+                    "question": "What is the average marks for each student in Term 1?",
+                    "answer": "Bob: 32.2, Jack: 83.3, John: 58.3, Mary: 71.7, Peter: 75.3"
+                },
+                {
+                    "question": "What is the average marks for each student in Term 2?",
+                    "answer": "Bob: 25.0, Jack: 86.3, John: 55.3, Mary: 73.7, Peter: 84.0"
+                }
+            ],
+            "summary": "This insight provides a comparison of students' performance across different terms. It can help in identifying trends in academic performance over time for individual students.",
+            "assumption": "Assuming that the average marks accurately represent the performance of each student.",
+            "visualization_chart": {
+                "chart_type": "Line Chart",
+                "reasoning": "A line chart is suitable for showing the trend of average marks for each student across different terms.",
+                "parameters": {
+                    "x_axis": ["Bob", "Jack", "John", "Mary", "Peter"],
+                    "y_axis_term1": [32.2, 83.3, 58.3, 71.7, 75.3],
+                    "y_axis_term2": [25.0, 86.3, 55.3, 73.7, 84.0],
+                    "title": "Average Marks by Student and Term",
+                    "colors": ["#FF5733", "#33FF57", "#3357FF"]
+                }
+            }
+        },
+        {
+            "insight_question": "How does the student enrollment and average marks vary across different subjects?",
+            "questions_and_answers_from_tool": [
+                {
+                    "question": "How many students are enrolled in each subject?",
+                    "answer": "English: 5, Math: 5, Science: 5"
+                },
+                {
+                    "question": "What is the average marks for each subject?",
+                    "answer": "English: 64.4, Math: 67.5, Science: 63.1"
+                }
+            ],
+            "summary": "This insight provides information on the distribution of students across different subjects and their average performance. It can help in understanding the popularity of subjects among students and the average academic performance in each subject.",
+            "assumption": "Assuming that each student is enrolled in at least one subject and that the average marks accurately represent the performance in each subject.",
+            "visualization_chart": {
+                "chart_type": "Pie Chart",
+                "reasoning": "A pie chart is suitable for showing the distribution of students across different subjects and their average marks.",
+                "parameters": {
+                    "labels": ["English", "Math", "Science"],
+                    "values_enrollment": [5, 5, 5],
+                    "values_avg_marks": [64.4, 67.5, 63.1],
+                    "title": "Student Enrollment and Average Marks by Subject",
+                    "colors": ["#FF5733", "#33FF57", "#3357FF"]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject?",
+                "answer": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks across subjects show that Math has the highest average score of 67.5, followed by English with 64.4, and Science with the lowest average of 63.1. This indicates that students perform best in Math and struggle the most with Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in performance.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+                "answer": "[('Science', 80), ('Math', 80), ('English', 80)]"
+            }
+        ],
+        "summary": "The pass rate for each subject is 80%, indicating a uniform level of performance across all subjects when considering a passing mark of 50. This uniformity suggests that while average performance varies by subject, the consistency in passing rates does not.",
+        "assumption": "A passing mark is considered to be 50 out of 100.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for displaying the pass rate percentage across different subjects, making it easy to compare the rates directly.",
+            "parameters": "x_axis: Subjects, y_axis: Pass Rate (%), title: Pass Rate by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('Science', 80), ('Math', 80), ('English', 80)]"
+        }
+    },
+    {
+        "insight_question": "What is the average marks for each term?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each term?",
+                "answer": "[(1, 60.411764705882355), (2, 71.0)]"
+            }
+        ],
+        "summary": "The average marks increase from Term 1 to Term 2, from approximately 60.4 to 71. This suggests an overall improvement in student performance over time, which could be due to a variety of factors such as increased familiarity with the subject matter or improved teaching methods.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is chosen to illustrate the trend in average marks over the two terms, highlighting the improvement in scores.",
+            "parameters": "x_axis: Term, y_axis: Average Marks, title: Average Marks by Term, colors: A single color for the line.",
+            "chart_data": "[(1, 60.411764705882355), (2, 71.0)]"
+        }
+    },
+    {
+        "insight_question": "How many students scored above 90 in each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many students scored above 90 in each subject?",
+                "answer": "[('Math', 2)]"
+            }
+        ],
+        "summary": "Only Math has students scoring above 90, with 2 students achieving this high mark. This indicates exceptional performance in Math by a few students, while no students reached such high marks in English or Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is effective for showing the count of high-achieving students across subjects, clearly indicating where the highest performances are concentrated.",
+            "parameters": "x_axis: Subjects, y_axis: Number of Students, title: Students Scoring Above 90 by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('Math', 2)]"
+        }
+    }
+]

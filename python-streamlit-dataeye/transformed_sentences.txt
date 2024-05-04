@@ -1,0 +1,16 @@
+Jack in Math scored 90 out of 100 in Term 1.
+John in Math scored 60 out of 100 in Term 1.
+Mary in Math scored 70 out of 100 in Term 1.
+Peter in Math scored 80 out of 100 in Term 1.
+Jack in English scored 85 out of 100 in Term 1.
+John in English scored 40 out of 100 in Term 1.
+Mary in English scored 80 out of 100 in Term 1.
+Peter in English scored 68 out of 100 in Term 1.
+Jack in Math scored 93 out of 100 in Term 2.
+John in Math scored 56 out of 100 in Term 2.
+Mary in Math scored 78 out of 100 in Term 2.
+Peter in Math scored 92 out of 100 in Term 2.
+Jack in English scored 56 out of 100 in Term 2.
+John in English scored 40 out of 100 in Term 2.
+Mary in English scored 70 out of 100 in Term 2.
+Peter in English scored 75 out of 100 in Term 2.

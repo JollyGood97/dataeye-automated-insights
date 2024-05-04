@@ -1,0 +1,70 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject?",
+                "answer": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks indicate that Math has the highest average score among the subjects, followed by English and Science. This suggests that students perform best in Math and may need additional support in Science, which has the lowest average.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in values for easy comparison.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Varying colors for each subject.",
+            "chart_data": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of marks across different terms?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of marks across different terms?",
+                "answer": "[(1, 60.411764705882355), (2, 71.0)]"
+            }
+        ],
+        "summary": "The distribution of marks shows a significant improvement from Term 1 to Term 2, with average marks increasing from 60.4 to 71. This suggests that students' performance has improved over time, or that the curriculum or teaching methods were more effective in Term 2.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is suitable for showing trends over time, in this case, the improvement in marks from Term 1 to Term 2.",
+            "parameters": "x_axis: Terms, y_axis: Average Marks, title: Average Marks by Term, colors: A single color for the line.",
+            "chart_data": "[(1, 60.411764705882355), (2, 71.0)]"
+        }
+    },
+    {
+        "insight_question": "What is the highest and lowest mark scored in each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the highest and lowest mark scored in each subject?",
+                "answer": "[('English', 86, 30), ('Math', 93, 23), ('Science', 85, 25)]"
+            }
+        ],
+        "summary": "The range of marks for each subject shows that Math had the highest maximum score of 93 but also a low score of 23, indicating a wide range of performance among students. English and Science also show a significant range, suggesting variability in student performance across subjects.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Box Plot",
+            "reasoning": "A box plot is perfect for showing the distribution of scores, including the median, quartiles, and outliers, which highlights the range of marks in each subject.",
+            "parameters": "x_axis: Subjects, y_axis: Marks, title: Range of Marks by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('English', 86, 30), ('Math', 93, 23), ('Science', 85, 25)]"
+        }
+    },
+    {
+        "insight_question": "How many students have scored below 50 in each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many students have scored below 50 in each subject?",
+                "answer": "[('Science', 2), ('Math', 2), ('English', 2)]"
+            }
+        ],
+        "summary": "Each subject has 2 students scoring below 50, indicating that there are students at risk of failing in all subjects. This highlights the need for targeted interventions to support these students.",
+        "assumption": "Marks scored below 50 is considered as fail.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for comparing the count of students scoring below 50 across subjects, providing a clear visual of where additional support may be needed.",
+            "parameters": "x_axis: Subjects, y_axis: Number of Students, title: Students Scoring Below 50 by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('Science', 2), ('Math', 2), ('English', 2)]"
+        }
+    }
+]

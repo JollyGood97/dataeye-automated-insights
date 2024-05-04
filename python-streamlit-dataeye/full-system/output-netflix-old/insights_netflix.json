@@ -1,0 +1,140 @@
+[
+    {
+        "insight_question": "How many records are there in the database?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many records are there in the database?",
+                "answer": "8807 records."
+            }
+        ],
+        "summary": "The database contains 8807 records.",
+        "assumption": "None.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A simple bar chart can visually represent the total number of records in the database effectively.",
+            "parameters": {
+                "x_axis": "Total Records",
+                "y_axis": "Count",
+                "title": "Total Records in the Database",
+                "colors": "Blue"
+            },
+            "chart_data": {
+                "x_axis": [
+                    "Total Records"
+                ],
+                "y_axis": [
+                    8807
+                ]
+            }
+        }
+    },
+    {
+        "insight_question": "What is the distribution of content types (Movies vs. TV Shows) in the database? What are the different ratings available in the database and their respective counts?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of content types (Movies vs. TV Shows) in the database?",
+                "answer": "Movies: 6131, TV Shows: 2676"
+            },
+            {
+                "question": "What are the different ratings available in the database and their respective counts?",
+                "answer": "None: 4, 66 min: 1, 74 min: 1, 84 min: 1, G: 41"
+            }
+        ],
+        "summary": "The database contains 6131 Movies and 2676 TV Shows. Various ratings are available, with 'G' being the most common.",
+        "assumption": "None.",
+        "visualization_chart": [
+            {
+                "chart_type": "Pie Chart",
+                "reasoning": "A pie chart can effectively show the distribution of content types (Movies vs. TV Shows) in the database.",
+                "parameters": {
+                    "labels": [
+                        "Movies",
+                        "TV Shows"
+                    ],
+                    "values": [
+                        6131,
+                        2676
+                    ],
+                    "title": "Content Types Distribution",
+                    "colors": [
+                        "#FF6347",
+                        "#4682B4"
+                    ]
+                },
+                "chart_data": {
+                    "labels": [
+                        "Movies",
+                        "TV Shows"
+                    ],
+                    "values": [
+                        6131,
+                        2676
+                    ]
+                }
+            },
+            {
+                "chart_type": "Bar Chart",
+                "reasoning": "A bar chart can display the counts of different ratings clearly.",
+                "parameters": {
+                    "x_axis": "Ratings",
+                    "y_axis": "Count",
+                    "title": "Ratings Distribution",
+                    "colors": "Blue"
+                },
+                "chart_data": {
+                    "x_axis": [
+                        "None",
+                        "66 min",
+                        "74 min",
+                        "84 min",
+                        "G"
+                    ],
+                    "y_axis": [
+                        4,
+                        1,
+                        1,
+                        1,
+                        41
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "insight_question": "What are the top 5 countries with the most content in the database?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the top 5 countries with the most content in the database?",
+                "answer": "1. United States: 2818, 2. India: 972, 3. None: 831, 4. United Kingdom: 419, 5. Japan: 245"
+            }
+        ],
+        "summary": "The top 5 countries with the most content in the database are the United States, India, None, United Kingdom, and Japan.",
+        "assumption": "None.",
+        "visualization_chart": {
+            "chart_type": "Horizontal Bar Chart",
+            "reasoning": "A horizontal bar chart can effectively compare the content counts of different countries.",
+            "parameters": {
+                "x_axis": "Count",
+                "y_axis": "Countries",
+                "title": "Top 5 Countries with Most Content",
+                "colors": "Green"
+            },
+            "chart_data": {
+                "x_axis": [
+                    2818,
+                    972,
+                    831,
+                    419,
+                    245
+                ],
+                "y_axis": [
+                    "United States",
+                    "India",
+                    "None",
+                    "United Kingdom",
+                    "Japan"
+                ]
+            }
+        }
+    }
+]

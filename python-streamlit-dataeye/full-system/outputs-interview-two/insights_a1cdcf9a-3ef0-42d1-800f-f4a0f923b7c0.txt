@@ -1,0 +1,74 @@
+Based on the data retrieved from the database, we can generate the following insights:
+
+1. **Comparison of Time Taken for Manual Calculations vs System-Generated Insights**
+
+- **Average time taken by interviewee for manual insights calculations:** 1440.625 seconds
+- **Average time taken by interviewee to think of what insights might be required:** 39.0 seconds
+- **Average time taken by the system to generate insights:** 111.625 seconds
+
+**Summary:** The comparison shows that the system significantly reduces the time required for generating insights. The average time taken by interviewees for manual calculations and thinking of insights totals to approximately 1479.625 seconds, which is considerably higher than the 111.625 seconds it takes for the system to generate insights. This indicates a significant reduction in time and effort required for data analysis when using the automated system.
+
+**Visualization for Insight 1:**
+- **Chart Type:** Bar Chart
+- **Reasoning:** A bar chart is suitable for comparing the average times across different processes (manual calculations, thought process, and system generation of insights), as it clearly displays differences in duration for each category.
+- **Parameters:** 
+  - **x_axis:** ['Manual Calculations', 'Thought Process', 'System Generation']
+  - **y_axis:** [1440.625, 39.0, 111.625]
+  - **title:** 'Time Comparison: Manual vs System-Generated Insights'
+  - **colors:** ['blue', 'orange', 'green']
+- **Chart Data:** Provided in the parameters above.
+
+2. **Comparison of Time Taken for Manual Chart Generations vs System-Generated Visualizations**
+
+- **Average time taken by interviewee for chart generations:** 2805.0 seconds
+- **Average time taken by the system to generate visualizations:** 20.25 seconds
+
+**Summary:** The system also shows a substantial improvement in the time required for generating visualizations. On average, interviewees estimated that manual chart generation would take 2805.0 seconds, whereas the system was able to generate visualizations in just 20.25 seconds. This highlights the efficiency of the system in not only generating insights but also in visualizing data promptly.
+
+**Visualization for Insight 2:**
+- **Chart Type:** Bar Chart
+- **Reasoning:** Similar to the first insight, a bar chart is effective in showcasing the stark contrast between the time taken for manual chart generations and that by the system, making it easier to visualize the time savings.
+- **Parameters:** 
+  - **x_axis:** ['Manual Chart Generation', 'System Visualization']
+  - **y_axis:** [2805.0, 20.25]
+  - **title:** 'Time Comparison: Manual vs System-Generated Visualizations'
+  - **colors:** ['red', 'purple']
+- **Chart Data:** Provided in the parameters above.
+
+```json
+[
+    {
+        "insight_question": "Comparison of Time Taken for Manual Calculations vs System-Generated Insights",
+        "questions_and_answers_from_tool": 
+        [ 
+            {"question": "What is the average estimation of time taken by interviewee for manual insights for performing calculations (using ai tools or anything)?", "answer": "1440.625"}, 
+            {"question": "What is the average time taken by interviewee to think of what insights might be required (Seconds)?", "answer": "39.0"},
+            {"question": "What is the average time it took for the system to generate insights (Seconds)?", "answer": "111.625"}
+        ],
+        "summary": "The system significantly reduces the time required for generating insights, showing a considerable decrease from manual calculations and thought processes to system-generated insights.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is chosen for its clear visualization of time differences across categories.",
+            "parameters": "x_axis: ['Manual Calculations', 'Thought Process', 'System Generation'], y_axis: [1440.625, 39.0, 111.625], title: 'Time Comparison: Manual vs System-Generated Insights', colors: ['blue', 'orange', 'green']",
+            "chart_data": "x_axis: ['Manual Calculations', 'Thought Process', 'System Generation'], y_axis: [1440.625, 39.0, 111.625]"
+        }
+    },
+    {
+        "insight_question": "Comparison of Time Taken for Manual Chart Generations vs System-Generated Visualizations",
+        "questions_and_answers_from_tool": 
+        [ 
+            {"question": "What is the average estimation of time taken by interviewee for chart generations (using ai tools or anything)?", "answer": "2805.0"}, 
+            {"question": "What is the average time it took for the system to generate visualizations (Seconds)?", "answer": "20.25"}
+        ],
+        "summary": "The system demonstrates a substantial improvement in generating visualizations quickly compared to manual efforts, showcasing its efficiency.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart effectively highlights the significant time savings between manual and system-generated visualizations.",
+            "parameters": "x_axis: ['Manual Chart Generation', 'System Visualization'], y_axis: [2805.0, 20.25], title: 'Time Comparison: Manual vs System-Generated Visualizations', colors: ['red', 'purple']",
+            "chart_data": "x_axis: ['Manual Chart Generation', 'System Visualization'], y_axis: [2805.0, 20.25]"
+        }
+    }
+]
+```

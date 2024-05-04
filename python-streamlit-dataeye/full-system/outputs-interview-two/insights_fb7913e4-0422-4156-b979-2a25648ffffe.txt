@@ -1,0 +1,23 @@
+```json
+[
+    {
+        "insight_question": "What is the subject students struggle with?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each subject across all terms?", "answer": "[('Math', 71.2), ('English', 64.4), ('Science', 63.1)]"},
+            {"question": "What is the highest mark achieved in each subject?", "answer": "[('English', 86), ('Math', 93), ('Science', 85)]"},
+            {"question": "What is the lowest mark achieved in each subject?", "answer": "[('Science', 25), ('English', 30), ('Math', 33)]"},
+            {"question": "How many students have scored below average in Math?", "answer": "[(3,)]"},
+            {"question": "How many students have scored below average in English?", "answer": "[(2,)]"},
+            {"question": "How many students have scored below average in Science?", "answer": "[(2,)]"}
+        ],
+        "summary": "Math has the highest average marks, indicating it might not be the subject students struggle the most with, despite having the highest peak score. Science has the lowest average score and the lowest minimum score, which suggests it could be the subject students find most challenging. The number of students scoring below average in Math is higher compared to English and Science, which indicates that while the average is high, there is a significant portion of the population struggling.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average, highest, and lowest marks among subjects, as well as the number of students scoring below average, to clearly show which subjects students struggle with the most.",
+            "parameters": "x_axis: Subjects, y_axis: Marks, title: Subject Performance Overview, colors: Different colors for average, highest, lowest marks, and below average students count.",
+            "chart_data": "{'Subjects': ['Math', 'English', 'Science'], 'Average Marks': [71.2, 64.4, 63.1], 'Highest Marks': [93, 86, 85], 'Lowest Marks': [33, 30, 25], 'Below Average Students': [3, 2, 2]}"
+        }
+    }
+]
+```

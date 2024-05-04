@@ -1,0 +1,106 @@
+[
+    {
+        "insight_question": "What is the distribution of marks across different subjects?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Math?",
+                "answer": ""
+            },
+            {
+                "question": "What is the average marks for English?",
+                "answer": ""
+            },
+            {
+                "question": "What is the average marks for Science?",
+                "answer": ""
+            }
+        ],
+        "summary": "By analyzing the distribution of marks across different subjects, we can identify any trends or disparities in performance.",
+        "assumption": "None",
+        "visualization_chart": {
+            "chart_type": "Box Plot",
+            "reasoning": "A Box Plot will show the distribution of marks for each subject, including the median, quartiles, and outliers, providing a clear comparison.",
+            "parameters": {
+                "x_axis": "Subject",
+                "y_axis": "Marks_out_of_100",
+                "title": "Distribution of Marks Across Subjects",
+                "colors": [
+                    "#FF5733"
+                ]
+            },
+            "chart_data": "Data for marks in Math, English, and Science subjects."
+        }
+    },
+    {
+        "insight_question": "How do the students perform on average in terms of marks?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Bob?",
+                "answer": "37.17"
+            },
+            {
+                "question": "What is the average marks for Jack?",
+                "answer": "84.83"
+            },
+            {
+                "question": "What is the average marks for John?",
+                "answer": "56.83"
+            },
+            {
+                "question": "What is the average marks for Mary?",
+                "answer": "72.67"
+            },
+            {
+                "question": "What is the average marks for Peter?",
+                "answer": "79.67"
+            }
+        ],
+        "summary": "Analyzing the average marks per student provides insights into individual performance levels.",
+        "assumption": "None",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A Bar Chart will visually compare the average marks of each student, making it easy to identify high and low performers.",
+            "parameters": {
+                "x_axis": "Student_Name",
+                "y_axis": "Average_Marks",
+                "title": "Average Marks per Student",
+                "colors": [
+                    "#3366FF"
+                ]
+            },
+            "chart_data": "Average marks for Bob, Jack, John, Mary, and Peter."
+        }
+    },
+    {
+        "insight_question": "How do the subjects perform on average in terms of marks?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Math?",
+                "answer": "71.2"
+            },
+            {
+                "question": "What is the average marks for English?",
+                "answer": "64.4"
+            },
+            {
+                "question": "What is the average marks for Science?",
+                "answer": "63.1"
+            }
+        ],
+        "summary": "Understanding the average marks per subject helps in identifying the performance levels across different subjects.",
+        "assumption": "None",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A Line Chart will show the trend of average marks across subjects, highlighting any disparities or improvements.",
+            "parameters": {
+                "x_axis": "Subject",
+                "y_axis": "Average_Marks",
+                "title": "Average Marks per Subject",
+                "colors": [
+                    "#33CC33"
+                ]
+            },
+            "chart_data": "Average marks for Math, English, and Science subjects."
+        }
+    }
+]

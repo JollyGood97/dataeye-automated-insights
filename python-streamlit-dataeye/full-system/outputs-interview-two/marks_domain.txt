@@ -1,0 +1,4 @@
+The name of the school is ABC Primary School. Each subject's full marks are out of 100, and the pass mark is 45. 
+A school year has two terms. Marks above 80 are graded as A, marks below 80 but above 60 are graded as B, marks below 60 but above 45 are graded as C, marks below 45 is graded as F for Fail.
+Teachers need to know which student struggles with which subject, and need to know if students' performance improves over the terms or declines.
+Teachers also need to know which students perform well. Teachers need to know the average pass rate of students for each year. For this, pass rate of each Term would have to be determined.

@@ -1,0 +1,74 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject?",
+                "answer": "[('English', 64.4), ('Math', 67.5), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks across subjects show that Math has the highest average score of 67.5, followed by English with 64.4, and Science with the lowest average of 63.1. This indicates that students perform best in Math and may need additional support in Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in performance for each subject.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('English', 64.4), ('Math', 67.5), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+                "answer": "[('Science', 80.0), ('Math', 80.0), ('English', 80.0)]"
+            }
+        ],
+        "summary": "The pass rate for each subject is 80%, indicating a uniform pass rate across Science, Math, and English. This uniformity suggests that while there are differences in average marks, the overall competency level across subjects is consistent.",
+        "assumption": "A passing mark is considered to be 50 out of 100.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for displaying the pass rate percentage for each subject side by side, making it easy to compare the rates across subjects.",
+            "parameters": "x_axis: Subjects, y_axis: Pass Rate (%), title: Pass Rate by Subject, colors: Different colors for each subject.",
+            "chart_data": "[('Science', 80.0), ('Math', 80.0), ('English', 80.0)]"
+        }
+    },
+    {
+        "insight_question": "What is the average marks for each term?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each term?",
+                "answer": "[(1, 60.411764705882355), (2, 71.0)]"
+            }
+        ],
+        "summary": "The average marks increase from Term 1 to Term 2, from approximately 60.4 to 71. This improvement suggests that students may be adapting to the curriculum over time, or that teaching methods and support mechanisms are becoming more effective.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is chosen to illustrate the trend in average marks over the two terms, highlighting the improvement from Term 1 to Term 2.",
+            "parameters": "x_axis: Term, y_axis: Average Marks, title: Average Marks by Term, line_color: A distinct color for the line.",
+            "chart_data": "[(1, 60.411764705882355), (2, 71.0)]"
+        }
+    },
+    {
+        "insight_question": "Which student has the highest and lowest average marks?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which student has the highest average marks?",
+                "answer": "[('Jack', 84.83333333333333)]"
+            },
+            {
+                "question": "Which student has the lowest average marks?",
+                "answer": "[('Bob', 31.0)]"
+            }
+        ],
+        "summary": "Jack has the highest average marks at approximately 84.83, while Bob has the lowest with an average of 31. This significant disparity in performance suggests the need for targeted interventions to support students like Bob, while also recognizing and fostering the talents of high achievers like Jack.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is effective for comparing individual student performance, showing the highest and lowest averages in a visually impactful way.",
+            "parameters": "x_axis: Students, y_axis: Average Marks, title: Student Performance Comparison, colors: Different colors to highlight the highest and lowest performers.",
+            "chart_data": "[('Jack', 84.83333333333333), ('Bob', 31.0)]"
+        }
+    }
+]

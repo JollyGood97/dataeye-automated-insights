@@ -1,0 +1,36 @@
+Based on the data retrieved and the domain knowledge provided, here are the insights derived from the student performance data:
+
+```json
+[
+    {
+        "insight_question": "Which subject do students struggle with the most?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each subject?", "answer": "[('Math', 71.2), ('English', 64.4), ('Science', 63.1)]"}
+        ],
+        "summary": "Students struggle the most with Science, as indicated by the lowest average mark of 63.1 compared to Math and English. This insight suggests a need for reviewing the Science curriculum or teaching methods to provide additional support or resources.",
+        "assumption": "Considering the average marks as a primary indicator of student struggles in a subject.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is recommended to visually compare the average marks across subjects, clearly illustrating which subject students find more challenging.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Diverse colors for each subject.",
+            "chart_data": "Subjects: ['Math', 'English', 'Science'], Average Marks: [71.2, 64.4, 63.1]"
+        }
+    },
+    {
+        "insight_question": "How does student performance vary across terms?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the distribution of marks for each term?", "answer": "[(1, 66.73333333333333, 35, 90), (2, 65.73333333333333, 25, 93)]"}
+        ],
+        "summary": "Student performance slightly declines from Term 1 to Term 2, with a marginal decrease in average marks. The distribution of marks also shows a wider range in Term 2, suggesting increased variability in student performance.",
+        "assumption": "Considering average marks and range of marks as indicators of performance variability.",
+        "visualization_chart": {
+            "chart_type": "Box Plot",
+            "reasoning": "A box plot is recommended to show the distribution of marks for each term, highlighting the median, quartiles, and potential outliers, thus providing a clear view of performance variability.",
+            "parameters": "x_axis: Term, y_axis: Marks, title: Distribution of Marks by Term, colors: Distinct colors for each term.",
+            "chart_data": "Term: [1, 2], Marks Distribution: [{'min': 35, 'Q1': 45, 'median': 66.7, 'Q3': 80, 'max': 90}, {'min': 25, 'Q1': 40, 'median': 65.7, 'Q3': 85, 'max': 93}]"
+        }
+    }
+]
+```
+
+These insights cover the performance of students across different subjects and terms, identifying areas of struggle and variability in performance. The recommended visualization charts aim to provide clear, actionable insights for educational institutions to make informed decisions on curriculum adjustments, resource allocation, and support strategies to enhance student learning outcomes.

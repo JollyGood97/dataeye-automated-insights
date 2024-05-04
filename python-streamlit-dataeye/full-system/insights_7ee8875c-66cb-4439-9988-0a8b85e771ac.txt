@@ -1,0 +1,33 @@
+```json
+[
+    {
+        "insight_question": "What is the performance trend of students across subjects in different terms?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each subject in Term 1?", "answer": "[('Math', 72.0), ('English', 66.6), ('Science', 61.6)]"}, 
+            {"question": "What is the average marks for each subject in Term 2?", "answer": "[('English', 62.2), ('Math', 70.4), ('Science', 64.6)]"}
+        ],
+        "summary": "Students tend to perform better in Math across both terms with a slight decrease in the average marks from Term 1 to Term 2. For English, there's a noticeable decline in performance from Term 1 to Term 2. Science showed an improvement in Term 2 compared to Term 1.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart", 
+            "reasoning": "A line chart is best suited to show the trend of marks over the two terms for each subject, highlighting the performance changes.",
+            "parameters": "x_axis: Terms, y_axis: Average Marks, title: Average Marks by Subject Across Terms, colors: Different colors for each subject", 
+            "chart_data": "Subjects: ['Math', 'English', 'Science'], Term 1: [72.0, 66.6, 61.6], Term 2: [70.4, 62.2, 64.6]"
+        }
+    },
+    {
+        "insight_question": "What is the range of marks scored in each subject?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the highest and lowest marks scored in each subject?", "answer": "[('English', 86, 30), ('Math', 93, 33), ('Science', 85, 25)]"}
+        ],
+        "summary": "The range of marks in each subject indicates the variation in student performance. Math has the widest range (60 points), suggesting a significant disparity in understanding and performance among students. Science has a range of 60 points, indicating a similar variability. English shows a slightly less but still considerable range of 56 points.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart", 
+            "reasoning": "A bar chart is suitable for comparing the highest and lowest marks of each subject, clearly showing the range of marks.",
+            "parameters": "x_axis: Subjects, y_axis: Marks Range, title: Range of Marks in Each Subject, colors: Different colors for each range", 
+            "chart_data": "Subjects: ['English', 'Math', 'Science'], Highest Marks: [86, 93, 85], Lowest Marks: [30, 33, 25]"
+        }
+    }
+]
+```

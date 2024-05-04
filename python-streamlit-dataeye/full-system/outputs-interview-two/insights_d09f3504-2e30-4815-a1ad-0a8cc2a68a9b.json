@@ -1,0 +1,87 @@
+[
+    {
+        "insight_question": "What is the distribution of tickets by status?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many tickets are there for each status category?",
+                "answer": "[('Open', 41), ('Overdue', 18), ('Work Started', 14)]"
+            }
+        ],
+        "summary": "The majority of tickets are in the 'Open' status, indicating a potentially large backlog of unresolved issues. The number of 'Overdue' tickets suggests that deadlines are not being met for a significant portion of tasks.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the frequency of categories. It clearly shows the differences in ticket volume across statuses.",
+            "parameters": "x_axis: Status, y_axis: Number of Tickets, title: Distribution of Tickets by Status, colors: [Open: blue, Overdue: red, Work Started: green]",
+            "chart_data": "[('Open', 41), ('Overdue', 18), ('Work Started', 14)]"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of tickets by priority level?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many tickets are there for each priority level?",
+                "answer": "[(None, 35), ('Medium - band aided and not affecting production output', 21), ('Low - resolved and not affecting production output', 10), ('High - affecting production output', 7)]"
+            }
+        ],
+        "summary": "A significant number of tickets do not have a priority assigned, which could impact the efficiency of issue resolution. The distribution shows a moderate focus on medium priority issues.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "A pie chart is suitable for showing the distribution of tickets across different priorities, highlighting the proportion of each category.",
+            "parameters": "labels: Priority Levels, values: Number of Tickets, title: Distribution of Tickets by Priority Level",
+            "chart_data": "[(None, 35), ('Medium', 21), ('Low', 10), ('High', 7)]"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of tickets across different folders?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "How many tickets are there in each folder category?",
+                "answer": "[('BTH Specific', 72), ('General Templates', 1), ('Scheduled Inspections', 0)]"
+            }
+        ],
+        "summary": "The 'BTH Specific' folder contains the majority of tickets, indicating a concentration of issues or activities in that area. The lack of tickets in 'Scheduled Inspections' suggests potential underutilization or oversight.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart effectively demonstrates the significant difference in ticket volume among folders, emphasizing the focus areas.",
+            "parameters": "x_axis: Folder, y_axis: Number of Tickets, title: Ticket Distribution Across Folders, colors: [BTH Specific: navy, General Templates: teal, Scheduled Inspections: maroon]",
+            "chart_data": "[('BTH Specific', 72), ('General Templates', 1), ('Scheduled Inspections', 0)]"
+        }
+    },
+    {
+        "insight_question": "What is the average number of ticket comments for each status category?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average number of ticket comments for each status category?",
+                "answer": "[('Work Started', 0.9375), ('Overdue', 0.6666666666666666), ('Open', 0.06722689075630252)]"
+            }
+        ],
+        "summary": "Tickets with 'Work Started' status have the highest average number of comments, suggesting active engagement and problem-solving efforts for these tickets. The low average for 'Open' tickets may indicate a lack of initial communication or action.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is chosen to compare the average number of comments across ticket statuses, indicating levels of engagement or activity.",
+            "parameters": "x_axis: Status, y_axis: Average Number of Comments, title: Average Ticket Comments by Status, colors: [Work Started: orange, Overdue: grey, Open: lightblue]",
+            "chart_data": "[('Work Started', 0.9375), ('Overdue', 0.6666666666666666), ('Open', 0.06722689075630252)]"
+        }
+    },
+    {
+        "insight_question": "Who are the top reporters of tickets?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of tickets reported by different individuals?",
+                "answer": "[('Michael', 9), ('Crystal', 7), ('Stephanie', 6), ('Line', 6), ('William', 5)]"
+            }
+        ],
+        "summary": "Michael is the top reporter of tickets, followed by Crystal. This distribution may indicate the engagement level of individuals with the ticketing system or reflect the areas of responsibility.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for showing the number of tickets reported by different individuals, highlighting those who are most active in reporting issues.",
+            "parameters": "x_axis: Reported By, y_axis: Number of Tickets, title: Top Ticket Reporters, colors: [Michael: darkblue, Crystal: purple, Stephanie: green, Line: orange, William: red]",
+            "chart_data": "[('Michael', 9), ('Crystal', 7), ('Stephanie', 6), ('Line', 6), ('William', 5)]"
+        }
+    }
+]

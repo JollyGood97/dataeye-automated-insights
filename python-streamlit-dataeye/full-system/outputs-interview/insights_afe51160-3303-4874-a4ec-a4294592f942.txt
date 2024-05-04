@@ -1,0 +1,87 @@
+```json
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Math?",
+                "answer": "71.2"
+            },
+            {
+                "question": "What is the average marks for English?",
+                "answer": "64.4"
+            },
+            {
+                "question": "What is the average marks for Science?",
+                "answer": "63.1"
+            }
+        ],
+        "summary": "The subjects Mathematics, English, and Science have average marks of 71.2, 64.4, and 63.1 respectively. Mathematics shows the highest average performance among students, indicating a stronger grasp of the subject or possibly more effective teaching methods.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it visually distinguishes between categories and allows for easy interpretation of the differences in performance.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Different color for each subject.",
+            "chart_data": "[('Math', 71.2), ('English', 64.4), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What is the average marks for each student?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for Jack?",
+                "answer": "84.83333333333333"
+            },
+            {
+                "question": "What is the average marks for Peter?",
+                "answer": "79.66666666666667"
+            },
+            {
+                "question": "What is the average marks for Mary?",
+                "answer": "72.66666666666667"
+            },
+            {
+                "question": "What is the average marks for John?",
+                "answer": "56.833333333333336"
+            },
+            {
+                "question": "What is the average marks for Bob?",
+                "answer": "37.166666666666664"
+            }
+        ],
+        "summary": "The analysis reveals a significant disparity in average marks among students, with Jack leading at an average of 84.83, followed by Peter and Mary with averages of 79.67 and 72.67 respectively. John and Bob show lower performance, with averages of 56.83 and 37.17 respectively, indicating potential areas for academic support or intervention.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is effectively used for comparing individual performance across a group, allowing for immediate visual analysis of each student's average marks, highlighting those in need of improvement.",
+            "parameters": "x_axis: Students, y_axis: Average Marks, title: Average Marks by Student, colors: Different color for each student.",
+            "chart_data": "[('Jack', 84.83333333333333), ('Peter', 79.66666666666667), ('Mary', 72.66666666666667), ('John', 56.833333333333336), ('Bob', 37.166666666666664)]"
+        }
+    },
+    {
+        "insight_question": "What is the pass rate for each subject, considering 50 as the pass mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the pass rate for Math?",
+                "answer": "90"
+            },
+            {
+                "question": "What is the pass rate for Science?",
+                "answer": "80"
+            },
+            {
+                "question": "What is the pass rate for English?",
+                "answer": "80"
+            }
+        ],
+        "summary": "The pass rates for Math, Science, and English are 90%, 80%, and 80% respectively, with Math showing a higher pass rate. This suggests that students perform better in Math compared to Science and English, which might reflect on the teaching quality, student interest, or the difficulty level of the subjects.",
+        "assumption": "A pass mark is considered 50 out of 100.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is chosen for its ability to clearly represent the percentage of students passing in each subject, providing a straightforward comparison between subjects.",
+            "parameters": "x_axis: Subjects, y_axis: Pass Rate (%), title: Pass Rate by Subject, colors: Different color for each subject.",
+            "chart_data": "[('Math', 90), ('Science', 80), ('English', 80)]"
+        }
+    }
+]
+```

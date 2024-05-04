@@ -1,0 +1,41 @@
+```json
+[
+    {
+        "insight_question": "What is the performance analysis based on marks in different subjects?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each subject across all terms?", "answer": "Math: 67.5, English: 64.4, Science: 63.1"},
+            {"question": "What is the highest marks scored in each subject?", "answer": "Math: 93, English: 86, Science: 85"}
+        ],
+        "summary": "The analysis shows that Math has the highest average marks and the highest score among all subjects. English follows with the second-highest average marks and score. Science has the lowest average marks among the subjects.",
+        "assumption": "Assuming marks are the sole indicator of performance in subjects.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for comparing performance metrics across different subjects visually.",
+            "parameters": {
+                "x_axis": ["Math", "English", "Science"],
+                "y_axis": [67.5, 64.4, 63.1],
+                "title": "Performance Analysis by Subject",
+                "colors": ["#FF5733", "#33FF57", "#3357FF"]
+            }
+        }
+    },
+    {
+        "insight_question": "How do students perform on average across all subjects and terms?",
+        "questions_and_answers_from_tool": [
+            {"question": "What is the average marks for each student across all subjects and terms?", "answer": "Jack: 84.83, Peter: 79.67, Mary: 72.67, John: 56.83, Bob: 31.0"}
+        ],
+        "summary": "Jack has the highest average marks across all subjects and terms, followed by Peter and Mary. John has the lowest average marks among the students.",
+        "assumption": "Considering the average marks as a measure of overall performance of students.",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "A pie chart can effectively show the distribution of average marks among students.",
+            "parameters": {
+                "labels": ["Jack", "Peter", "Mary", "John", "Bob"],
+                "values": [84.83, 79.67, 72.67, 56.83, 31.0],
+                "title": "Student Performance Overview",
+                "colors": ["#FF5733", "#33FF57", "#3357FF", "#5733FF", "#FF3357"]
+            }
+        }
+    }
+]
+```

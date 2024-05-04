@@ -1,0 +1,70 @@
+[
+    {
+        "insight_question": "What is the average marks for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject?",
+                "answer": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+            }
+        ],
+        "summary": "The average marks across subjects show that Math has the highest average score (67.5), followed by English (64.4), and Science (63.1). This indicates that students perform best in Math and relatively lower in Science.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the average marks across different subjects, as it clearly displays differences in values for easy comparison.",
+            "parameters": "x_axis: Subjects, y_axis: Average Marks, title: Average Marks by Subject, colors: Different for each subject.",
+            "chart_data": "[('Math', 67.5), ('English', 64.4), ('Science', 63.1)]"
+        }
+    },
+    {
+        "insight_question": "What is the average marks for each student?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each student?",
+                "answer": "[('Jack', 84.83333333333333), ('Peter', 79.66666666666667), ('Mary', 72.66666666666667), ('John', 56.833333333333336), ('Bob', 31.0)]"
+            }
+        ],
+        "summary": "The average marks per student reveal that Jack is the top performer with an average of 84.83, followed by Peter, Mary, John, and Bob, with Bob having significantly lower scores (31.0). This highlights a need for targeted academic support for Bob.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is suitable for showcasing individual student performance as it allows for easy comparison of average marks between students.",
+            "parameters": "x_axis: Students, y_axis: Average Marks, title: Average Marks by Student, colors: Different for each student.",
+            "chart_data": "[('Jack', 84.83333333333333), ('Peter', 79.66666666666667), ('Mary', 72.66666666666667), ('John', 56.833333333333336), ('Bob', 31.0)]"
+        }
+    },
+    {
+        "insight_question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the pass rate for each subject, considering 50 as the passing mark?",
+                "answer": "[('Science', 80), ('Math', 80), ('English', 80)]"
+            }
+        ],
+        "summary": "The pass rate for each subject is 80%, indicating a uniform pass rate across Math, English, and Science. This suggests that while there are differences in average scores, the majority of students are achieving the minimum required marks.",
+        "assumption": "Marks scored below 50 is considered as fail.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is effective for visualizing pass rates across subjects, providing a clear comparison of the percentage of students passing in each subject.",
+            "parameters": "x_axis: Subjects, y_axis: Pass Rate (%), title: Pass Rate by Subject, colors: Different for each subject.",
+            "chart_data": "[('Science', 80), ('Math', 80), ('English', 80)]"
+        }
+    },
+    {
+        "insight_question": "What is the distribution of marks across terms for each subject?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the distribution of marks across terms for each subject?",
+                "answer": "[('English', 1, 60.5), ('English', 2, 70.25), ('Math', 1, 59.333333333333336), ('Math', 2, 79.75), ('Science', 1, 61.6)]"
+            }
+        ],
+        "summary": "The distribution of marks across terms shows an improvement in scores from Term 1 to Term 2 for both English and Math, indicating effective teaching strategies or increased student effort over time. However, the data for Science in Term 2 is missing, suggesting a need for data completeness.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart is chosen to illustrate the trend of marks over the two terms for each subject, highlighting improvements or declines.",
+            "parameters": "x_axis: Term, y_axis: Average Marks, title: Marks Distribution Across Terms by Subject, colors: Different for each subject.",
+            "chart_data": "[('English', 1, 60.5), ('English', 2, 70.25), ('Math', 1, 59.333333333333336), ('Math', 2, 79.75), ('Science', 1, 61.6)]"
+        }
+    }
+]

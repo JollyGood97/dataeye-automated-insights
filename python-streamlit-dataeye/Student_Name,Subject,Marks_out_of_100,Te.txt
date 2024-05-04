@@ -1,0 +1,17 @@
+Student_Name,Subject,Marks_out_of_100,Term
+Jack,Math,90,1
+John,Math,60,1
+Mary,Math,70,1
+Peter,Math,80,1
+Jack,English,85,1
+John,English,40,1
+Mary,English,80,1
+Peter,English,68,1
+Jack,Math,93,2
+John,Math,56,2
+Mary,Math,78,2
+Peter,Math,92,2
+Jack,English,56,2
+John,English,40,2
+Mary,English,70,2
+Peter,English,75,2

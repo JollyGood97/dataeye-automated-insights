@@ -1,0 +1,87 @@
+{
+    "insights": [
+        {
+            "insight_question": "What is the average marks for each subject in Term 1 and Term 2?",
+            "questions_and_answers_from_tool": [
+                {
+                    "question": "What is the average marks for Math in Term 1?",
+                    "answer": "The average marks for Math in Term 1 is 59.33."
+                },
+                {
+                    "question": "What is the average marks for Math in Term 2?",
+                    "answer": "The average marks for Math in Term 2 is 79.75."
+                },
+                {
+                    "question": "What is the average marks for English in Term 1?",
+                    "answer": "The average marks for English in Term 1 is 60.5."
+                },
+                {
+                    "question": "What is the average marks for English in Term 2?",
+                    "answer": "The average marks for English in Term 2 is 70.25."
+                },
+                {
+                    "question": "What is the average marks for Science in Term 1?",
+                    "answer": "The average marks for Science in Term 1 is 61.6."
+                },
+                {
+                    "question": "What is the average marks for Science in Term 2?",
+                    "answer": "The average marks for Science in Term 2 is 64.6."
+                }
+            ],
+            "summary": "The average marks for each subject increased from Term 1 to Term 2. Math showed the highest increase in average marks.",
+            "assumption": "Assuming the data is representative of the overall student performance.",
+            "visualization_chart": {
+                "chart_type": "Bar Chart",
+                "reasoning": "A bar chart is suitable for comparing average marks across different subjects and terms.",
+                "parameters": {
+                    "x_axis": ["Math Term 1", "Math Term 2", "English Term 1", "English Term 2", "Science Term 1", "Science Term 2"],
+                    "y_axis": [59.33, 79.75, 60.5, 70.25, 61.6, 64.6],
+                    "title": "Average Marks for Each Subject in Term 1 and Term 2",
+                    "colors": ["blue", "green", "orange", "red", "purple", "pink"]
+                }
+            }
+        },
+        {
+            "insight_question": "What is the average marks for each subject in Term 1 and Term 2?",
+            "questions_and_answers_from_tool": [
+                {
+                    "question": "What is the average marks for Math in Term 1?",
+                    "answer": "The average marks for Math in Term 1 is 59.33."
+                },
+                {
+                    "question": "What is the average marks for Math in Term 2?",
+                    "answer": "The average marks for Math in Term 2 is 79.75."
+                },
+                {
+                    "question": "What is the average marks for English in Term 1?",
+                    "answer": "The average marks for English in Term 1 is 60.5."
+                },
+                {
+                    "question": "What is the average marks for English in Term 2?",
+                    "answer": "The average marks for English in Term 2 is 70.25."
+                },
+                {
+                    "question": "What is the average marks for Science in Term 1?",
+                    "answer": "The average marks for Science in Term 1 is 61.6."
+                },
+                {
+                    "question": "What is the average marks for Science in Term 2?",
+                    "answer": "The average marks for Science in Term 2 is 64.6."
+                }
+            ],
+            "summary": "The average marks for each subject increased from Term 1 to Term 2. Math showed the highest increase in average marks.",
+            "assumption": "Assuming the data is representative of the overall student performance.",
+            "visualization_chart": {
+                "chart_type": "Bar Chart",
+                "reasoning": "A bar chart is suitable for comparing average marks across different subjects and terms.",
+                "parameters": {
+                    "x_axis": ["Math Term 1", "Math Term 2", "English Term 1", "English Term 2", "Science Term 1", "Science Term 2"],
+                    "y_axis": [59.33, 79.75, 60.5, 70.25, 61.6, 64.6],
+                    "title": "Average Marks for Each Subject in Term 1 and Term 2",
+                    "colors": ["blue", "green", "orange", "red", "purple", "pink"]
+                }
+            }
+        }
+ 
+    ]
+}

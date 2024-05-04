@@ -1,0 +1,33 @@
+```json
+[
+    {
+        "insight_question": "What are the key insights from the student performance data?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What is the average marks for each subject across all terms?",
+                "answer": "Math: 67.5, English: 64.4, Science: 63.1"
+            },
+            {
+                "question": "What is the maximum marks scored in each subject?",
+                "answer": "English: 86, Math: 93, Science: 85"
+            },
+            {
+                "question": "How many students scored above 80 in each subject?",
+                "answer": "Math: 3, English: 2, Science: 1"
+            }
+        ],
+        "summary": "The average marks show that students perform best in Math, followed by English and then Science. The maximum marks indicate the highest achievement in Math. The number of students scoring above 80 is highest in Math.",
+        "assumption": "Assuming the data is complete and accurate.",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart can effectively compare the average marks, maximum marks, and number of students scoring above 80 in each subject.",
+            "parameters": {
+                "x_axis": ["Math", "English", "Science"],
+                "y_axis": ["Average Marks", "Maximum Marks", "Number of Students > 80"],
+                "title": "Student Performance Insights",
+                "colors": ["#FF5733", "#33FF57", "#3366FF"]
+            }
+        }
+    }
+]
+```

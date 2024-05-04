@@ -1,0 +1,63 @@
+It appears there was an error in fetching the data for maximum moment values (M2 and M3) for each story, as the response did not contain numerical values. However, I will proceed with the insights based on the data available for axial loads (P) and shear forces (V2 and V3).
+
+Based on the data available, here are the insights:
+
+1. **Axial Loads Across Stories**:
+   - The axial loads decrease from Story1 to Story5, indicating that the lower stories bear more load, which aligns with structural engineering principles where lower stories support the weight of all above.
+   - The maximum axial load is on Story1 with 79.9074 kN, and the minimum recorded axial load is on Story5 with 7.587 kN.
+
+2. **Shear Forces Across Stories**:
+   - Shear forces (both V2 and V3) vary across stories, with no clear trend of increasing or decreasing from Story1 to Story6. However, Story6 shows the highest shear forces with 74.6952 kN for V2 and 93.5359 kN for V3, which is an anomaly considering the expectation that lower stories would bear higher forces.
+   
+Given these insights, the recommended visualizations are:
+
+1. **For Axial Loads**:
+   - **Chart Type**: Bar Chart
+   - **Reasoning**: A bar chart is ideal for comparing the magnitude of axial loads across different stories, showing a clear visual difference in loads.
+   - **Parameters**: x_axis: 'Story', y_axis: 'Maximum Axial Load (P)', title: 'Maximum Axial Loads by Story'
+   - **Chart Data**: The data provided for axial loads.
+
+2. **For Shear Forces**:
+   - **Chart Type**: Line Chart
+   - **Reasoning**: A line chart can effectively display the variation of shear forces across stories, with separate lines for V2 and V3 to compare their trends.
+   - **Parameters**: x_axis: 'Story', y_axis: 'Shear Forces (V2, V3)', title: 'Shear Forces by Story', colors: ['blue', 'red']
+   - **Chart Data**: The data provided for shear forces.
+
+Unfortunately, due to the inability to retrieve moment values (M2 and M3), insights related to moments cannot be provided.
+
+Here is the JSON array of insight objects based on the data successfully retrieved:
+
+```json
+[
+    {
+        "insight_question": "How do axial loads vary across stories?",
+        "questions_and_answers_from_tool": [
+            {"question": "What are the maximum axial loads (P) for each story?", "answer": "[('Story1', 79.9074), ('Story2', 57.0464), ('Story3', 35.9212), ('Story4', 19.3362), ('Story5', 7.587)]"}
+        ],
+        "summary": "Axial loads decrease from Story1 to Story5, indicating that lower stories bear more load. The maximum axial load is on Story1 (79.9074 kN), and the minimum is on Story5 (7.587 kN).",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart clearly visualizes the descending axial loads from Story1 to Story5.",
+            "parameters": "x_axis: 'Story', y_axis: 'Maximum Axial Load (P)', title: 'Maximum Axial Loads by Story'",
+            "chart_data": "[('Story1', 79.9074), ('Story2', 57.0464), ('Story3', 35.9212), ('Story4', 19.3362), ('Story5', 7.587)]"
+        }
+    },
+    {
+        "insight_question": "How do shear forces vary across stories?",
+        "questions_and_answers_from_tool": [
+            {"question": "What are the maximum shear forces (V2 and V3) for each story?", "answer": "[('Story1', 50.3394, 36.7601), ('Story2', 64.3808, 68.5621), ('Story3', 60.4985, 66.555), ('Story4', 58.7812, 69.8502), ('Story5', 55.1771, 67.2061), ('Story6', 74.6952, 93.5359)]"}
+        ],
+        "summary": "Shear forces vary across stories, with no clear increasing or decreasing trend. Story6 exhibits the highest shear forces, which is unexpected given the structural load principles.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart effectively shows the variation of shear forces across stories, with separate lines for V2 and V3.",
+            "parameters": "x_axis: 'Story', y_axis: 'Shear Forces (V2, V3)', title: 'Shear Forces by Story', colors: ['blue', 'red']",
+            "chart_data": "[('Story1', 50.3394, 36.7601), ('Story2', 64.3808, 68.5621), ('Story3', 60.4985, 66.555), ('Story4', 58.7812, 69.8502), ('Story5', 55.1771, 67.2061), ('Story6', 74.6952, 93.5359)]"
+        }
+    }
+]
+```
+
+This presentation of insights covers the critical analysis of axial and shear forces across stories, highlighting the critical columns and their locations with the available data.

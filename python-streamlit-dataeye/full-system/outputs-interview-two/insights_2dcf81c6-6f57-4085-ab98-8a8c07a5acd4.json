@@ -1,0 +1,70 @@
+[
+    {
+        "insight_question": "Which hero has the highest win rate on the radiant side?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which hero has the highest win rate on the radiant side?",
+                "answer": "[('Shadow Shaman', '1.00')]"
+            }
+        ],
+        "summary": "Shadow Shaman holds the highest win rate on the Radiant side with a perfect score of 1.00, indicating 100% win rate when played on this side.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is ideal for comparing the win rates of different heroes on the Radiant side, highlighting the hero with the highest rate clearly.",
+            "parameters": "x_axis: Heroes, y_axis: Win Rate, title: Highest Win Rate on Radiant Side",
+            "chart_data": "{'Heroes': ['Shadow Shaman'], 'Win Rate': [1.00]}"
+        }
+    },
+    {
+        "insight_question": "Which hero is the least picked but has the highest win rate?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which hero is the least picked but has the highest win rate?",
+                "answer": "[('Beastmaster', 1, 1, 0, 1.0)]"
+            }
+        ],
+        "summary": "Beastmaster is the least picked hero but has the highest win rate, being picked only once and winning that single game, resulting in a win rate of 100%.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Pie Chart",
+            "reasoning": "A pie chart is suitable for showcasing the proportion of games won by Beastmaster compared to the total games, emphasizing the efficiency despite low pick rate.",
+            "parameters": "labels: Heroes, values: Win Rate, title: Least Picked Hero with Highest Win Rate",
+            "chart_data": "{'Heroes': ['Beastmaster'], 'Win Rate': [1.0]}"
+        }
+    },
+    {
+        "insight_question": "Which hero has the highest win rate on the dire side?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "Which hero has the highest win rate on the dire side?",
+                "answer": "[('Shadow Fiend', '1.00')]"
+            }
+        ],
+        "summary": "Shadow Fiend secures the highest win rate on the Dire side with a win rate of 1.00, translating to a 100% success rate when played on this side.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart effectively compares the win rates of heroes on the Dire side, with Shadow Fiend standing out as the top performer.",
+            "parameters": "x_axis: Heroes, y_axis: Win Rate, title: Highest Win Rate on Dire Side",
+            "chart_data": "{'Heroes': ['Shadow Fiend'], 'Win Rate': [1.00]}"
+        }
+    },
+    {
+        "insight_question": "Top five heroes with the highest overall win rate.",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "List the top five heroes with the highest overall win rate.",
+                "answer": "[('Meepo', 3, 0, 1.0), ('Queen of Pain', 2, 0, 1.0), ('Spirit Breaker', 2, 0, 1.0), ('Beastmaster', 1, 0, 1.0), ('Naga Siren', 1, 0, 1.0)]"
+            }
+        ],
+        "summary": "The top five heroes with the highest overall win rate are Meepo, Queen of Pain, Spirit Breaker, Beastmaster, and Naga Siren, all boasting a perfect win rate of 100%. Meepo leads with three picks, followed by Queen of Pain and Spirit Breaker with two picks each, and Beastmaster and Naga Siren with one pick each.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart is best suited for displaying the win rates of the top five heroes, showing their win rates side by side for easy comparison.",
+            "parameters": "x_axis: Heroes, y_axis: Win Rate, title: Top Five Heroes with Highest Win Rate",
+            "chart_data": "{'Heroes': ['Meepo', 'Queen of Pain', 'Spirit Breaker', 'Beastmaster', 'Naga Siren'], 'Win Rate': [1.0, 1.0, 1.0, 1.0, 1.0]}"
+        }
+    }
+]

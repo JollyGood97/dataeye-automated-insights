@@ -1,0 +1,36 @@
+[
+    {
+        "insight_question": "How do axial loads vary across stories?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the maximum axial loads (P) for each story?",
+                "answer": "[('Story1', 79.9074), ('Story2', 57.0464), ('Story3', 35.9212), ('Story4', 19.3362), ('Story5', 7.587)]"
+            }
+        ],
+        "summary": "Axial loads decrease from Story1 to Story5, indicating that lower stories bear more load. The maximum axial load is on Story1 (79.9074 kN), and the minimum is on Story5 (7.587 kN).",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Bar Chart",
+            "reasoning": "A bar chart clearly visualizes the descending axial loads from Story1 to Story5.",
+            "parameters": "x_axis: 'Story', y_axis: 'Maximum Axial Load (P)', title: 'Maximum Axial Loads by Story'",
+            "chart_data": "[('Story1', 79.9074), ('Story2', 57.0464), ('Story3', 35.9212), ('Story4', 19.3362), ('Story5', 7.587)]"
+        }
+    },
+    {
+        "insight_question": "How do shear forces vary across stories?",
+        "questions_and_answers_from_tool": [
+            {
+                "question": "What are the maximum shear forces (V2 and V3) for each story?",
+                "answer": "[('Story1', 50.3394, 36.7601), ('Story2', 64.3808, 68.5621), ('Story3', 60.4985, 66.555), ('Story4', 58.7812, 69.8502), ('Story5', 55.1771, 67.2061), ('Story6', 74.6952, 93.5359)]"
+            }
+        ],
+        "summary": "Shear forces vary across stories, with no clear increasing or decreasing trend. Story6 exhibits the highest shear forces, which is unexpected given the structural load principles.",
+        "assumption": "",
+        "visualization_chart": {
+            "chart_type": "Line Chart",
+            "reasoning": "A line chart effectively shows the variation of shear forces across stories, with separate lines for V2 and V3.",
+            "parameters": "x_axis: 'Story', y_axis: 'Shear Forces (V2, V3)', title: 'Shear Forces by Story', colors: ['blue', 'red']",
+            "chart_data": "[('Story1', 50.3394, 36.7601), ('Story2', 64.3808, 68.5621), ('Story3', 60.4985, 66.555), ('Story4', 58.7812, 69.8502), ('Story5', 55.1771, 67.2061), ('Story6', 74.6952, 93.5359)]"
+        }
+    }
+]
